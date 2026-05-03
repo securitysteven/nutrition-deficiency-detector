@@ -43,10 +43,23 @@ Thus, **NDD is the best overall solution for most users**, complemented by highe
 
 ---
 
+## Essential Nutrients
+
+Our detection rules are organized based on the five groups of essential nutrients. Essential nutrients are vital for health but cannot be produced by the body; they must be obtained through food or supplements.
+
+### The Five Groups
+1.  **Water** – Essential for hydration and metabolic processes.
+2.  **Vitamins** – All vitamins are essential (A, B-complex, C, D, E, K, etc.).
+3.  **Minerals** – Includes key minerals like Iron, Magnesium, Calcium, and Zinc.
+4.  **Amino Acids** – Essential amino acids derived from proteins.
+5.  **Fatty Acids** – Essential fatty acids derived from fats.
+
+*Note on Carbohydrates:* While often categorized as key nutrients, carbohydrates are **not** essential. The body can synthesize necessary glucose from proteins and fats. However, they remain a healthy nutrient choice for many.
+
 ## Features
 
 - **Multi‑nutrient panel support** – CBC, metabolic panel, iron studies, vitamin D, B‑12, folate, magnesium, and more.
-- **Configurable YAML rules** – Adjust low/high cut‑offs, age/sex modifiers, and custom advice without touching code. Individual YAML files per nutrient are stored in `src/ndd/rules/`.
+- **Configurable YAML rules** – Adjust low/high cut‑offs, age/sex modifiers, and custom advice without touching code. Individual YAML files are organized by group in `src/ndd/rules/`.
 - **CLI & Python API** – Use from the terminal or embed in larger pipelines (research, tele‑nutrition apps, etc.).
 - **Export options** – JSON, CSV, and ready‑to‑print PDF report with color‑coded alerts.
 - **Extensible architecture** – Add new biomarkers or functional tests via simple plug‑ins.
