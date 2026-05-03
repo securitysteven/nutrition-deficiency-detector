@@ -1,0 +1,11 @@
+name: "Vitamin B12"
+biomarker: "Cobalamin"
+unit: "pg/mL"
+thresholds:
+  deficient: 200
+  borderline: [200, 300]
+  normal: [300, 900]
+recommendations:
+  deficient: "High risk of anemia and neurological issues. Consult a doctor immediately."
+  borderline: "Consider B12 supplementation, especially if vegan or vegetarian."
+  normal: "Vitamin B12 levels are normal."

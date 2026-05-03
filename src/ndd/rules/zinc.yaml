@@ -1,0 +1,9 @@
+name: "Zinc"
+biomarker: "Zinc (Serum)"
+unit: "mcg/dL"
+thresholds:
+  low: 60
+  normal: [60, 120]
+recommendations:
+  low: "Risk of impaired immunity. Increase intake of meat, shellfish, and legumes."
+  normal: "Zinc levels are normal."

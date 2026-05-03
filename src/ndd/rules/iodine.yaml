@@ -1,0 +1,9 @@
+name: "Iodine"
+biomarker: "Iodine (Serum)"
+unit: "mcg/L"
+thresholds:
+  low: 40
+  normal: [40, 92]
+recommendations:
+  low: "Risk of thyroid issues (goiter). Increase intake of iodized salt and seafood."
+  normal: "Iodine levels are normal."

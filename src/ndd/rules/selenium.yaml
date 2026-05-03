@@ -1,0 +1,9 @@
+name: "Selenium"
+biomarker: "Selenium (Serum)"
+unit: "mcg/L"
+thresholds:
+  low: 70
+  normal: [70, 150]
+recommendations:
+  low: "Risk of immune and thyroid issues. Increase intake of Brazil nuts and seafood."
+  normal: "Selenium levels are normal."

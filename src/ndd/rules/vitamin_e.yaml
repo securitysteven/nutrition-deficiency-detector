@@ -1,0 +1,9 @@
+name: "Vitamin E"
+biomarker: "Alpha-tocopherol"
+unit: "mg/L"
+thresholds:
+  deficient: 5
+  normal: [5, 20]
+recommendations:
+  deficient: "May cause nerve/muscle damage. Increase intake of nuts, seeds, and oils."
+  normal: "Vitamin E levels are normal."

@@ -1,0 +1,11 @@
+name: "Iron"
+biomarker: "Ferritin"
+unit: "ng/mL"
+thresholds:
+  deficient: 15
+  low_normal: [15, 30]
+  normal: [30, 150]
+recommendations:
+  deficient: "Highly likely iron deficiency. Consult a doctor for supplementation."
+  low_normal: "Consider increasing iron-rich foods (red meat, spinach, lentils)."
+  normal: "Iron levels are within the normal range."

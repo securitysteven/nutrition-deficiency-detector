@@ -1,0 +1,9 @@
+name: "Threonine"
+biomarker: "Threonine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 60
+  normal: [60, 200]
+recommendations:
+  low: "Increase intake of cottage cheese and poultry."
+  normal: "Threonine levels are normal."

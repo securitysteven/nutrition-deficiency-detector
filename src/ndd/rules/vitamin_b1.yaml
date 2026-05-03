@@ -1,0 +1,9 @@
+name: "Vitamin B1"
+biomarker: "Thiamin Pyrophosphate (TPP)"
+unit: "nmol/L"
+thresholds:
+  deficient: 70
+  normal: [70, 180]
+recommendations:
+  deficient: "Risk of Beriberi or Wernicke-Korsakoff. Increase intake of whole grains and legumes."
+  normal: "Thiamin levels are normal."

@@ -1,0 +1,9 @@
+name: "Linoleic acid"
+biomarker: "Linoleic acid (Plasma)"
+unit: "% of total fatty acids"
+thresholds:
+  low: 15
+  normal: [15, 30]
+recommendations:
+  low: "Increase intake of vegetable oils, nuts, and seeds (Omega-6)."
+  normal: "Linoleic acid levels are normal."

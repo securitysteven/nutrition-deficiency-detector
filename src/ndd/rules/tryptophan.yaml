@@ -1,0 +1,9 @@
+name: "Tryptophan"
+biomarker: "Tryptophan (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 40
+  normal: [40, 80]
+recommendations:
+  low: "Increase intake of turkey, eggs, and cheese."
+  normal: "Tryptophan levels are normal."

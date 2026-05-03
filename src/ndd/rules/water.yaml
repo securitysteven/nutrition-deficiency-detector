@@ -1,0 +1,11 @@
+name: "Water"
+biomarker: "Serum Osmolality"
+unit: "mOsm/kg"
+thresholds:
+  dehydrated: 300
+  normal: [275, 295]
+  overhydrated: 275
+recommendations:
+  dehydrated: "Increase water intake significantly. Consult a doctor if symptoms persist."
+  normal: "Hydration levels are within the normal range."
+  overhydrated: "Monitor fluid intake; excessive water can lead to hyponatremia."

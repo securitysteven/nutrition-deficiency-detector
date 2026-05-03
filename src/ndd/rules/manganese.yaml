@@ -1,0 +1,9 @@
+name: "Manganese"
+biomarker: "Manganese (Serum)"
+unit: "mcg/L"
+thresholds:
+  low: 4
+  normal: [4, 15]
+recommendations:
+  low: "Uncommon deficiency. Increase intake of whole grains and nuts."
+  normal: "Manganese levels are normal."

@@ -1,0 +1,9 @@
+name: "Vitamin B5"
+biomarker: "Pantothenate"
+unit: "mcg/dL"
+thresholds:
+  low: 10
+  normal: [10, 100]
+recommendations:
+  low: "Uncommon deficiency. Increase intake of various foods as it is widely available."
+  normal: "Pantothenic acid levels are normal."

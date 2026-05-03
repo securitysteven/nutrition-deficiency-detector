@@ -1,0 +1,9 @@
+name: "Vitamin B3"
+biomarker: "Niacin (Serum)"
+unit: "mcg/mL"
+thresholds:
+  deficient: 0.5
+  normal: [0.5, 8.0]
+recommendations:
+  deficient: "Risk of Pellagra. Increase intake of poultry, fish, and nuts."
+  normal: "Niacin levels are normal."

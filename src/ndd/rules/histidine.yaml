@@ -1,0 +1,9 @@
+name: "Histidine"
+biomarker: "Histidine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 60
+  normal: [60, 120]
+recommendations:
+  low: "Increase intake of meat, fish, and whole grains."
+  normal: "Histidine levels are normal."

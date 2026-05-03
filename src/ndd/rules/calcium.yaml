@@ -1,0 +1,11 @@
+name: "Calcium"
+biomarker: "Calcium (Serum)"
+unit: "mg/dL"
+thresholds:
+  low: 8.5
+  normal: [8.5, 10.2]
+  high: 10.2
+recommendations:
+  low: "Hypocalcemia. Increase intake of dairy or leafy greens. Consult doctor."
+  normal: "Calcium levels are normal."
+  high: "Hypercalcemia. Consult doctor to check for underlying issues."

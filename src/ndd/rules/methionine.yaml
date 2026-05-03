@@ -1,0 +1,9 @@
+name: "Methionine"
+biomarker: "Methionine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 15
+  normal: [15, 45]
+recommendations:
+  low: "Increase intake of eggs, sesame seeds, and fish."
+  normal: "Methionine levels are normal."

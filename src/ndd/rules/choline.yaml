@@ -1,0 +1,9 @@
+name: "Choline"
+biomarker: "Free Choline"
+unit: "mcmol/L"
+thresholds:
+  low: 7
+  normal: [7, 20]
+recommendations:
+  low: "May lead to fatty liver or muscle damage. Increase intake of eggs and meat."
+  normal: "Choline levels are normal."

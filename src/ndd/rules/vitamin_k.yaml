@@ -1,0 +1,9 @@
+name: "Vitamin K"
+biomarker: "Phylloquinone (K1)"
+unit: "nmol/L"
+thresholds:
+  low: 0.2
+  normal: [0.2, 3.2]
+recommendations:
+  low: "Risk of bleeding issues. Increase intake of leafy green vegetables."
+  normal: "Vitamin K levels are normal."

@@ -1,0 +1,11 @@
+name: "Vitamin B6"
+biomarker: "Pyridoxal 5'-phosphate (PLP)"
+unit: "nmol/L"
+thresholds:
+  deficient: 20
+  low: [20, 30]
+  normal: [30, 110]
+recommendations:
+  deficient: "Consult a doctor. May cause nerve issues or anemia."
+  low: "Increase intake of chickpeas, tuna, and salmon."
+  normal: "Vitamin B6 levels are normal."

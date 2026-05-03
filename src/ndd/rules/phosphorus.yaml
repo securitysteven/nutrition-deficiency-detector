@@ -1,0 +1,9 @@
+name: "Phosphorus"
+biomarker: "Phosphorus (Serum)"
+unit: "mg/dL"
+thresholds:
+  low: 2.5
+  normal: [2.5, 4.5]
+recommendations:
+  low: "Hypophosphatemia. Increase intake of protein-rich foods."
+  normal: "Phosphorus levels are normal."

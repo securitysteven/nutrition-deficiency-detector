@@ -1,0 +1,11 @@
+name: "Vitamin C"
+biomarker: "Ascorbic Acid"
+unit: "mg/dL"
+thresholds:
+  deficient: 0.2
+  low: [0.2, 0.4]
+  normal: [0.4, 1.5]
+recommendations:
+  deficient: "Risk of scurvy. Increase intake of citrus fruits and bell peppers."
+  low: "Increase daily fruit and vegetable intake."
+  normal: "Vitamin C levels are normal."

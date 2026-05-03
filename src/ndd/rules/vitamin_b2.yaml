@@ -1,0 +1,9 @@
+name: "Vitamin B2"
+biomarker: "Riboflavin (Serum)"
+unit: "mcg/L"
+thresholds:
+  deficient: 1
+  normal: [1, 19]
+recommendations:
+  deficient: "Potential ariboflavinosis. Increase intake of dairy, eggs, and lean meats."
+  normal: "Riboflavin levels are normal."

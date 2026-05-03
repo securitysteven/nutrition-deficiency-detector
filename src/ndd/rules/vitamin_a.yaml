@@ -1,0 +1,13 @@
+name: "Vitamin A"
+biomarker: "Retinol"
+unit: "mcg/dL"
+thresholds:
+  deficient: 20
+  low: [20, 30]
+  normal: [30, 80]
+  high: 100
+recommendations:
+  deficient: "Risk of night blindness. Consult a doctor for Vitamin A supplementation."
+  low: "Increase intake of orange vegetables (carrots, sweet potatoes) and leafy greens."
+  normal: "Vitamin A levels are optimal."
+  high: "Excessive Vitamin A can be toxic. Review supplement intake."

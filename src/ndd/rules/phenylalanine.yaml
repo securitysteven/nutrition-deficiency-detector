@@ -1,0 +1,9 @@
+name: "Phenylalanine"
+biomarker: "Phenylalanine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 35
+  normal: [35, 85]
+recommendations:
+  low: "Increase intake of dairy, meat, and nuts."
+  normal: "Phenylalanine levels are normal."

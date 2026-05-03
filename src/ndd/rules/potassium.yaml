@@ -1,0 +1,11 @@
+name: "Potassium"
+biomarker: "Potassium (Serum)"
+unit: "mEq/L"
+thresholds:
+  low: 3.5
+  normal: [3.5, 5.0]
+  high: 5.0
+recommendations:
+  low: "Hypokalemia. Increase intake of bananas, potatoes, and spinach."
+  normal: "Potassium levels are normal."
+  high: "Hyperkalemia. Risk of heart issues. Consult doctor immediately."

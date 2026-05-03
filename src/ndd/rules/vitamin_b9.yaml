@@ -1,0 +1,11 @@
+name: "Vitamin B9"
+biomarker: "Folate (Serum)"
+unit: "ng/mL"
+thresholds:
+  deficient: 3
+  borderline: [3, 6]
+  normal: [6, 20]
+recommendations:
+  deficient: "Risk of megaloblastic anemia. Increase leafy greens and beans."
+  borderline: "Consider increasing folate-rich foods."
+  normal: "Folate levels are normal."

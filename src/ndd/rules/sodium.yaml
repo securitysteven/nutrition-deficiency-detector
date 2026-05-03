@@ -1,0 +1,11 @@
+name: "Sodium"
+biomarker: "Sodium (Serum)"
+unit: "mEq/L"
+thresholds:
+  low: 135
+  normal: [135, 145]
+  high: 145
+recommendations:
+  low: "Hyponatremia. May be due to excessive water or kidney issues."
+  normal: "Sodium levels are normal."
+  high: "Hypernatremia. Usually due to dehydration."

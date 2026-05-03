@@ -1,0 +1,11 @@
+name: "Chloride"
+biomarker: "Chloride (Serum)"
+unit: "mEq/L"
+thresholds:
+  low: 96
+  normal: [96, 106]
+  high: 106
+recommendations:
+  low: "May indicate dehydration or metabolic alkalosis."
+  normal: "Chloride levels are normal."
+  high: "May indicate kidney issues or metabolic acidosis."

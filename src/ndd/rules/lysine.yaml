@@ -1,0 +1,9 @@
+name: "Lysine"
+biomarker: "Lysine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 100
+  normal: [100, 250]
+recommendations:
+  low: "Increase intake of meat, beans, and lentils."
+  normal: "Lysine levels are normal."

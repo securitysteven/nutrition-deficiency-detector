@@ -1,0 +1,9 @@
+name: "Vitamin B7"
+biomarker: "Biotin"
+unit: "pg/mL"
+thresholds:
+  low: 200
+  normal: [200, 1100]
+recommendations:
+  low: "May cause hair loss or skin rash. Increase intake of eggs and nuts."
+  normal: "Biotin levels are normal."

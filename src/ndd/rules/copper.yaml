@@ -1,0 +1,11 @@
+name: "Copper"
+biomarker: "Copper (Serum)"
+unit: "mcg/dL"
+thresholds:
+  low: 70
+  normal: [70, 140]
+  high: 140
+recommendations:
+  low: "May cause anemia or bone issues. Increase intake of shellfish and seeds."
+  normal: "Copper levels are normal."
+  high: "Potential copper toxicity or Wilson's disease."

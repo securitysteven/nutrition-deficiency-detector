@@ -1,0 +1,9 @@
+name: "Magnesium"
+biomarker: "Magnesium (Serum)"
+unit: "mg/dL"
+thresholds:
+  low: 1.7
+  normal: [1.7, 2.2]
+recommendations:
+  low: "Hypomagnesemia. Increase intake of nuts, seeds, and leafy greens."
+  normal: "Magnesium levels are normal."

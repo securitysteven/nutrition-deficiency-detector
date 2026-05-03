@@ -1,0 +1,9 @@
+name: "Leucine"
+biomarker: "Leucine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 70
+  normal: [70, 170]
+recommendations:
+  low: "Increase intake of protein-rich foods."
+  normal: "Leucine levels are normal."

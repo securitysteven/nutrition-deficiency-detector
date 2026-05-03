@@ -1,0 +1,9 @@
+name: "Valine"
+biomarker: "Valine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 150
+  normal: [150, 300]
+recommendations:
+  low: "Increase intake of dairy, meat, and soy."
+  normal: "Valine levels are normal."
