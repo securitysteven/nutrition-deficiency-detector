@@ -1,9 +1,0 @@
-name: "Glutamine"
-biomarker: "Glutamine (Plasma)"
-unit: "mcmol/L"
-thresholds:
-  low: 350
-  normal: [350, 750]
-recommendations:
-  low: "Consider increasing intake of beef, chicken, fish, and dairy. Glutamine is essential for gut health and immune function during stress."
-  normal: "Glutamine levels are normal."

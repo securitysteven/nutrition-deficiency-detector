@@ -65,7 +65,7 @@ These can be produced by the body but may be needed from food during stress, ill
 ## Features
 
 - **Multi‑nutrient panel support** – CBC, metabolic panel, iron studies, vitamin D, B‑12, folate, magnesium, and more.
-- **Configurable YAML rules** – Adjust low/high cut‑offs, age/sex modifiers, and custom advice without touching code. Individual YAML files are organized by group in `src/ndd/rules/`.
+- **Configurable YAML rules** – Adjust low/high cut‑offs, age/sex modifiers, and custom advice without touching code. Individual YAML files are organized by group in `data/nutrition/rules/`.
 - **CLI & Python API** – Use from the terminal or embed in larger pipelines (research, tele‑nutrition apps, etc.).
 - **Export options** – JSON, CSV, and ready‑to‑print PDF report with color‑coded alerts.
 - **Extensible architecture** – Add new biomarkers or functional tests via simple plug‑ins.
@@ -82,7 +82,7 @@ cd nutri-deficiency-detector
 pip install -r requirements.txt
 
 # Run on a sample CSV (columns: test\_name, value, unit)
-python -m ndd detect samples/example\_blood\_test.csv
+python -m ndd detect data/samples/example\_blood\_test.csv
 ```
 
 ---

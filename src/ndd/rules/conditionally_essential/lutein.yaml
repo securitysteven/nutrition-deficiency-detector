@@ -1,9 +1,0 @@
-name: "Lutein"
-biomarker: "Lutein (Serum)"
-unit: "mg/L"
-thresholds:
-  low: 0.1
-  normal: [0.3, 1.0]
-recommendations:
-  low: "Increase intake of dark leafy greens like kale and spinach. Lutein is vital for eye health."
-  normal: "Lutein levels are normal."

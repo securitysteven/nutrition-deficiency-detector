@@ -1,9 +1,0 @@
-name: "Tyrosine"
-biomarker: "Tyrosine (Plasma)"
-unit: "mcmol/L"
-thresholds:
-  low: 35
-  normal: [35, 130]
-recommendations:
-  low: "Increase intake of cheese, turkey, and fish. Tyrosine is a precursor to dopamine and thyroid hormones."
-  normal: "Tyrosine levels are normal."

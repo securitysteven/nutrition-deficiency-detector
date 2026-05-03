@@ -1,9 +1,0 @@
-name: "Zeaxanthin"
-biomarker: "Zeaxanthin (Serum)"
-unit: "mg/L"
-thresholds:
-  low: 0.02
-  normal: [0.05, 0.2]
-recommendations:
-  low: "Increase intake of corn, orange peppers, and egg yolks. Zeaxanthin supports macular health."
-  normal: "Zeaxanthin levels are normal."

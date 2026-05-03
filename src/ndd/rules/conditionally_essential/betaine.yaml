@@ -1,9 +1,0 @@
-name: "Betaine"
-biomarker: "Betaine (Plasma)"
-unit: "mcmol/L"
-thresholds:
-  low: 20
-  normal: [20, 60]
-recommendations:
-  low: "Increase intake of beets, spinach, and whole grains. Betaine supports methylation and liver function."
-  normal: "Betaine levels are normal."

@@ -1,9 +1,0 @@
-name: "Taurine"
-biomarker: "Taurine (Plasma)"
-unit: "mcmol/L"
-thresholds:
-  low: 30
-  normal: [30, 200]
-recommendations:
-  low: "Consider increasing intake of meat and fish. Taurine is conditionally essential for cardiovascular and eye health."
-  normal: "Taurine levels are normal."

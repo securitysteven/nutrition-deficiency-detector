@@ -1,9 +1,0 @@
-name: "Glycine"
-biomarker: "Glycine (Plasma)"
-unit: "mcmol/L"
-thresholds:
-  low: 130
-  normal: [130, 450]
-recommendations:
-  low: "Increase intake of meat, fish, and dairy. Glycine is important for collagen synthesis."
-  normal: "Glycine levels are normal."

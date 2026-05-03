@@ -1,9 +1,0 @@
-name: "Arginine"
-biomarker: "Arginine (Plasma)"
-unit: "mcmol/L"
-thresholds:
-  low: 15
-  normal: [15, 150]
-recommendations:
-  low: "Consider increasing intake of protein-rich foods like turkey, pork, and nuts. Arginine is conditionally essential during stress or illness."
-  normal: "Arginine levels are within the normal range."
