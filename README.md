@@ -46,7 +46,7 @@ Thus, **NDD is the best overall solution for most users**, complemented by highe
 ## Features
 
 - **Multi‑nutrient panel support** – CBC, metabolic panel, iron studies, vitamin D, B‑12, folate, magnesium, and more.
-- **Configurable YAML rules** – Adjust low/high cut‑offs, age/sex modifiers, and custom advice without touching code.
+- **Configurable YAML rules** – Adjust low/high cut‑offs, age/sex modifiers, and custom advice without touching code. Individual YAML files per nutrient are stored in `src/ndd/rules/`.
 - **CLI & Python API** – Use from the terminal or embed in larger pipelines (research, tele‑nutrition apps, etc.).
 - **Export options** – JSON, CSV, and ready‑to‑print PDF report with color‑coded alerts.
 - **Extensible architecture** – Add new biomarkers or functional tests via simple plug‑ins.
