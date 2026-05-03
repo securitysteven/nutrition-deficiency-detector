@@ -1,9 +1,91 @@
 name: "Magnesium"
+symbol: "Mg"
+type: "Essential Mineral"
 biomarker: "Magnesium (Serum)"
-unit: "mg/dL"
+units:
+  primary: "mg/dL"
+  secondary: "mmol/L"
+  tertiary: "mEq/L"
+functions:
+  - "Essential for functioning of nerves, muscles, heart, and gut"
+  - "Maintains bone structure"
+  - "Necessary for proper functioning of calcium, potassium, and vitamin D"
+  - "Natural calcium antagonist (calcium enables muscle contraction, magnesium relaxation)"
+rda:
+  men: "400-420 mg/day (for 14+)"
+  women: "310-360 mg/day (for 14+)"
+  pregnancy_lactation: "310-400 mg/day"
+  notes: "RDA for 19-30: Men 400mg, Women 310mg; 31+: Men 420mg, Women 320mg. Infants 0-6m: 30mg (AI); 7-12m: 75mg (AI)."
+food_sources:
+  high_plant: ["Whole-grain cereals", "Green leafy vegetables (chlorophyll)", "Legumes", "Nuts (almonds, cashews, hazelnuts, peanuts)", "Seeds (pumpkin, squash, sunflower)", "Quinoa", "Brown rice", "Buckwheat groats", "Oat bran", "Spinach", "Swiss chard", "Soybeans", "Oatmeal", "Beet greens", "Figs (dried)", "Molasses", "Dark chocolate", "Avocado", "Potato", "Banana", "Okra"]
+  high_animal: ["Fish (pollock, salmon, mackerel, halibut, sardines)", "Milk"]
+  water: "Bottled/Tap water (Mg sulfate and bicarbonate): 0-30 mg/cup"
+  notes: "Meat, poultry, and dairy are generally low in magnesium. 30-50% absorption from foods and water."
 thresholds:
-  low: 1.7
-  normal: [1.7, 2.2]
+  deficient:
+    value: 1.7
+    unit: "mg/dL"
+  normal:
+    range: [1.7, 2.1]
+    unit: "mg/dL"
+  high:
+    value: 2.1
+    unit: "mg/dL"
 recommendations:
-  low: "Hypomagnesemia. Increase intake of nuts, seeds, and leafy greens."
-  normal: "Magnesium levels are normal."
+  deficient: "Hypomagnesemia (<1.7 mg/dL). Risk of neuromuscular and cardiovascular symptoms. Increase magnesium-rich foods or consult for supplementation."
+  normal: "Magnesium levels are normal (1.7-2.1 mg/dL)."
+  high: "Hypermagnesemia (>2.1 mg/dL). Often due to kidney failure with supplement overdose. Consult physician."
+deficiency:
+  at_risk: ["Chronic alcoholism", "Anorexia nervosa", "Prolonged starvation", "Elderly", "Celiac disease", "Crohn's disease", "Small intestine resection", "Chronic pancreatitis", "Diabetes (poorly controlled)", "Kidney disorders", "Hyperaldosteronism", "Hypercalcemia"]
+  symptoms:
+    mild: ["Loss of appetite", "Nausea", "Fatigue", "Constipation"]
+    severe: ["Numbness", "Tingling (mouth/fingers)", "Hyperventilation", "Muscle twitches/cramps (tetany)", "Tremor", "Teeth grinding", "Difficulty breathing", "Migraine", "Chest pain (coronary spasms)", "Arrhythmia", "Seizures", "Hearing loss", "Tinnitus", "Hallucinations", "Coma"]
+  medication_risks: ["Diuretics", "Proton-pump inhibitors (PPIs) like omeprazole >1 year", "Antimicrobials (Amphotericin B, Foscarnet)", "Chemotherapy (Cisplatin)", "Immunosuppressants (Cyclosporine)"]
+  complications: ["Hypocalcemia", "Hypokalemia", "Phosphate deficiency", "Insulin resistance (Type 2 Diabetes risk)", "Stroke risk"]
+  assessment_notes: "Serum levels may be normal despite total body depletion. 25g stored in bones and muscles. RBC or urine tests may be used but are less common."
+supplements:
+  forms_otc:
+    - name: "Magnesium Citrate"
+      elemental_mg: "16%"
+      notes: "Well absorbed, also used as laxative. Pregnancy Category C."
+    - name: "Magnesium Oxide"
+      elemental_mg: "60%"
+      notes: "High Mg content but extremely low bioavailability (4-23%). Used as antacid/laxative. Pregnancy Category C."
+    - name: "Magnesium Sulfate (Epsom salt)"
+      elemental_mg: "10-17%"
+      notes: "Well absorbed from water. Used as laxative. Pregnancy Category A (oral)."
+    - name: "Magnesium Chloride"
+      elemental_mg: "12%"
+      notes: "Well absorbed. Pregnancy Category C."
+    - name: "Magnesium Lactate"
+      elemental_mg: "12%"
+      notes: "Well absorbed. Pregnancy Category C."
+    - name: "Magnesium Gluconate"
+      elemental_mg: "5.4%"
+      notes: "Well absorbed. Pregnancy Category C."
+    - name: "Magnesium Carbonate"
+      elemental_mg: "40-45%"
+      notes: "High bioavailability. Used as antacid. Not classified for pregnancy."
+    - name: "Magnesium Glycinate"
+      elemental_mg: "5.5%"
+    - name: "Magnesium Malate"
+      elemental_mg: "6.5%"
+    - name: "Magnesium Threonate"
+      elemental_mg: "7.7%"
+    - name: "Magnesium Orotate"
+      elemental_mg: "6%"
+      notes: "Safety concern regarding orotic acid (EFSA). Pregnancy Category C."
+  effective_for: ["Magnesium deficiency"]
+  possibly_effective: ["Dyspepsia/Heartburn (GERD)", "Bowel preparation for colonoscopy", "Eclampsia (intravenous MgSO4)", "Arrhythmia (intravenous)", "Acute asthma in children (intravenous)"]
+  insufficient_evidence: ["Anxiety", "ADHD", "Chronic fatigue syndrome", "Depression", "Diabetes type 2", "Fibromyalgia", "Migraine", "Osteoporosis", "PMS", "Restless leg syndrome"]
+safety:
+  upper_limit: "350 mg/day (supplemental for adults/children 9+)"
+  overdose_symptoms: ["Diarrhea (main side effect)", "Thirst", "Fainting", "Drowsiness", "Confusion", "Slow heart beat", "Hypotension", "Muscle weakness", "Difficulty breathing"]
+  warnings: ["Kidney disease", "Myasthenia gravis", "Neurological disorders", "Allergy to Mg compounds"]
+  pregnancy_notes: "Magnesium sulfate injection is Category D (risk to fetus if used for preterm labor)."
+interactions:
+  nutrients: ["High doses of Zinc or Calcium may reduce Mg absorption", "Vitamin D may slightly increase Mg levels"]
+  drugs: ["Amiloride/Spironolactone may increase Mg levels", "PPIs may cause Mg depletion with long-term use"]
+notes:
+  calcium_ratio: "Ca/Mg ratio < 1.7 associated with increased mortality in some studies; high ratio linked to colorectal cancer."
+  transdermal: "Epsom salt baths can absorb small amounts. Magnesium oil (chloride) absorption via skin is not well-proven."

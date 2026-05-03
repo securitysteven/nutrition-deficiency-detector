@@ -1,11 +1,65 @@
 name: "Potassium"
+synonyms: ["Kalium", "K"]
+type: "Essential Mineral"
 biomarker: "Potassium (Serum)"
-unit: "mEq/L"
+units:
+  primary: "mmol/L"
+  secondary: "mEq/L"
+  conversion: "1 mmol/L = 1 mEq/L; To convert to mg: mmol * 39.1"
+functions:
+  - "Proper functioning of the nerves (sensations, muscle and heart contractions)"
+  - "Energy production from carbohydrates"
+ai:
+  infants_0_6m: "0.4 g/day"
+  infants_7_12m: "0.7 g/day"
+  children_1_3y: "3 g/day"
+  children_4_8y: "3.8 g/day"
+  children_9_13y: "4.5 g/day"
+  adults_14_plus: "4.7 g/day (including pregnancy)"
+  breastfeeding: "5.1 g/day"
+food_sources:
+  high_plant:
+    fruits: ["Apricots", "Peaches", "Prunes", "Avocado", "Jackfruit", "Pomegranate", "Guava", "Kiwi fruit", "Banana", "Figs", "Cantaloupe", "Grapefruit", "Orange", "Pineapple"]
+    vegetables_beans: ["Potatoes (with skin)", "Sweet potato", "Yam", "Beet greens", "White beans", "Adzuki beans", "Soybeans", "Spinach", "Swiss chard", "Tomatoes", "Lentils", "Artichokes", "Broccoli", "Brussels sprouts"]
+    other: ["Dark chocolate", "Quinoa", "Blackstrap molasses", "Pumpkin seeds", "Pistachios", "Peanut butter"]
+  high_animal: ["Salmon (red, smoked, Atlantic, wild)", "Cod", "Halibut", "Pollock", "Sardines", "Tuna", "Clams", "Oysters", "Beef soup", "Yogurt", "Beef", "Bison", "Goat", "Pork", "Milk"]
+  notes: "Potassium chloride is used as a salt substitute (1g KCl ≈ 500mg K). Double boiling or leaching vegetables can reduce potassium content for low-potassium diets."
 thresholds:
-  low: 3.5
-  normal: [3.5, 5.0]
-  high: 5.0
+  deficient:
+    value: 3.5
+    unit: "mmol/L"
+  normal:
+    range: [3.5, 5.1]
+    unit: "mmol/L"
+    notes: "Upper limit may vary (5.0-5.5) among laboratories."
+  high:
+    value: 5.5
+    unit: "mmol/L"
 recommendations:
-  low: "Hypokalemia. Increase intake of bananas, potatoes, and spinach."
+  deficient: "Hypokalemia indicated (<3.5 mmol/L). May cause fatigue, muscle weakness, constipation, or fatal arrhythmia. Requires oral or intravenous potassium supplements."
   normal: "Potassium levels are normal."
-  high: "Hyperkalemia. Risk of heart issues. Consult doctor immediately."
+  high: "Hyperkalemia indicated (>5.5 mmol/L). Risk of nausea, tingling, paralysis, or fatal arrhythmia. Often caused by kidney failure or overdose of supplements."
+deficiency:
+  name: "Hypokalemia"
+  causes: ["Prolonged fasting", "Alcoholism", "Refeeding syndrome", "Vomiting/Diarrhea", "Diuretics", "Steroids", "Diabetes mellitus", "Hyperaldosteronism"]
+  symptoms: ["Fatigue", "Muscle weakness", "Constipation", "Polyuria", "Paresthesia", "Muscle cramps (charley horse/tetany)", "Palpitations", "Arrhythmia"]
+  notes: "Mild deficiency can result in water retention, increased blood pressure, and risk of stroke/kidney stones."
+toxicity:
+  name: "Hyperkalemia"
+  causes: ["Kidney failure", "Addison's disease", "Insulin deficiency (Type 1 Diabetes)", "Severe muscle damage", "Potassium-sparing diuretics", "Potassium supplement overdose"]
+  symptoms: ["Nausea", "Tingling", "Muscular weakness", "Paralysis", "Depression", "Arrhythmia", "Heart attack"]
+  notes: "Ingestion of >5.5g K at once can cause measurable hyperkalemia; >18g can be deadly."
+supplements:
+  forms_prescription: ["Potassium chloride (tablets, capsules, liquids)", "Potassium bicarbonate", "Potassium citrate", "Potassium gluconate", "Potassium acetate"]
+  notes: "Potassium supplements are generally available only by prescription in doses >99mg in the US. Bioavailability is similar across forms."
+  effective_for: ["Correcting low blood potassium", "Preventing hypokalemia during thiazide diuretic treatment"]
+  possibly_effective: ["Prevention of kidney stones (Potassium citrate)"]
+  not_effective: ["Prevention of high blood pressure"]
+safety:
+  upper_limit: "Not set for dietary intake; individuals with kidney disease or taking potassium-sparing diuretics must limit intake."
+  side_effects: ["Nausea", "Vomiting", "Abdominal discomfort", "Diarrhea", "Intestinal ulcers"]
+  pregnancy_category: "C (Doses up to 80 meq/day are likely safe during breastfeeding/pregnancy)"
+  warnings: ["Avoid in kidney disease, Addison's disease, or with potassium-sparing diuretics", "Swallowing problems (avoid solid forms)"]
+notes:
+  interactions: ["Sodium/Potassium ratio (low ratio is beneficial)", "Potassium-sparing diuretics (Amiloride, Spironolactone, Triamterene) increase K levels", "Glucose/Insulin can trigger refeeding syndrome"]
+  faq: "Marathon running usually doesn't require K replacement during the race. Potassium naturally in foods (citrate) alkalizes urine, helping prevent kidney stones."

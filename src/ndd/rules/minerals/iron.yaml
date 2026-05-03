@@ -1,11 +1,69 @@
 name: "Iron"
+type: "Essential Mineral"
+symbol: "Fe"
 biomarker: "Ferritin"
-unit: "ng/mL"
+units:
+  primary: "ng/mL"
+  secondary: "mcg/L"
+functions:
+  - "Carries oxygen in blood (as part of hemoglobin)"
+  - "Carries oxygen in muscles (as part of myoglobin)"
+  - "Involved in metabolism and immunity (as part of enzymes)"
+rda:
+  infants_7_12m: "11 mg/day"
+  children_1_3y: "7 mg/day"
+  children_4_8y: "10 mg/day"
+  children_9_13y: "8 mg/day"
+  boys_14_18y: "11 mg/day"
+  girls_14_18y: "15 mg/day (26 mg for vegans)"
+  men_19plus: "8 mg/day (14 mg for vegans)"
+  women_19_menstruating: "18 mg/day (33 mg for vegans)"
+  pregnancy: "27 mg/day"
+  breastfeeding: "10 mg/day"
+  women_post_menopause: "8 mg/day (14 mg for vegans)"
+ai:
+  infants_0_6m: "0.27 mg/day"
+food_sources:
+  heme_animal: ["Beef or lamb spleen", "Pork spleen", "Pork liver", "Clams", "Chicken giblets", "Beef liver", "Beef", "Bison", "Deer", "Horse", "Moose", "Sardines", "Anchovies", "Goat", "Shrimps", "Fish (bass, trout, tuna)"]
+  nonheme_plant: ["Fortified cereals", "Instant oats", "Amaranth", "Teff", "Soybeans", "Legumes (beans, chickpeas, lentils)", "Pumpkin seeds", "Blackstrap molasses", "Spinach", "Quinoa", "Rice", "Prune juice", "Beets", "Tofu", "Sunflower seeds", "Cashew nuts"]
+  notes: "Heme iron is ~1.8x more bioavailable than nonheme iron. Breast milk contains ~0.3 mg/L (50% absorbed)."
 thresholds:
-  deficient: 15
-  low_normal: [15, 30]
-  normal: [30, 150]
+  deficient:
+    value: 15
+    unit: "ng/mL"
+  low_normal:
+    range: [15, 30]
+    unit: "ng/mL"
+  normal:
+    range: [30, 150]
+    unit: "ng/mL"
 recommendations:
-  deficient: "Highly likely iron deficiency. Consult a doctor for supplementation."
-  low_normal: "Consider increasing iron-rich foods (red meat, spinach, lentils)."
-  normal: "Iron levels are within the normal range."
+  deficient: "Iron deficiency anemia highly likely (<15 ng/mL). Consult a doctor for supplementation and to find the cause of deficiency."
+  low_normal: "Iron stores are low (15-30 ng/mL). Increase intake of iron-rich foods, especially heme iron or nonheme iron with Vitamin C."
+  normal: "Iron levels are normal."
+deficiency:
+  causes:
+    - "Insufficient intake (vegan diet, alcoholism, anorexia)"
+    - "Low absorption (Celiac, Crohn's, H. pylori, Vitamin C deficiency, gastric bypass)"
+    - "Excessive loss (GI bleeding, heavy menstruation, ulcers, parasites)"
+    - "Chronic kidney disease (low erythropoietin)"
+    - "Copper, Vitamin A, or Vitamin B2 deficiency"
+  at_risk: ["Preterm infants", "Children 6m-4y", "Teenage girls", "Pregnant/breastfeeding women", "Vegetarian athletes", "Frequent blood donors"]
+  symptoms: ["Paleness", "Fatigue", "Dizziness", "Rapid heartbeat/breathing", "Feeling cold", "Brittle nails", "Inflamed tongue", "Restless leg syndrome", "Pica (eating dirt)"]
+  diagnosis: ["Low MCV/MCHC (microcytic hypochromic)", "Low HCT", "Low Hemoglobin", "Low Ferritin", "High TIBC"]
+supplements:
+  forms_otc: ["Heme-iron polypeptides", "Ferrous ascorbate", "Carbonyl iron", "Iron salts (sulfate, fumarate, gluconate)", "Iron chelates (bisglycinate)"]
+  forms_injection: ["Iron dextran", "Ferumoxytol", "Ferric gluconate", "Iron sucrose"]
+  effective_for: ["Prevention and treatment of iron deficiency", "Anemia from chronic disease"]
+  possibly_effective: ["Learning problems in children", "Preventing lead intoxication", "ACE inhibitor cough", "Heart failure symptoms", "Restless leg syndrome"]
+safety:
+  upper_limit: "40-45 mg/day (UL for adults)"
+  side_effects: ["Nausea", "Vomiting", "Constipation", "Diarrhea", "Black/green stool", "Teeth staining (liquid)"]
+  overdose_warning: "20-60 mg/kg can be toxic; 200 mg at once can be deadly for a child."
+  chronic_overload: "Hemochromatosis (cirrhosis, diabetes, heart damage). Avoid supplements without deficiency."
+interactions:
+  increases_absorption: ["Meat/Poultry/Fish", "Vitamin C", "Erythorbic acid", "Hydrochloric acid", "Alcohol (whisky, wine, beer)"]
+  decreases_absorption: ["Tannins/Polyphenols (Tea, coffee, cocoa)", "Phytates (Grains, nuts, beans)", "Calcium (Dairy)", "Zinc supplements", "Antacids/PPIs/H2 blockers", "Soy protein", "Eggs/Milk proteins"]
+  drugs: ["Allopurinol", "ACE inhibitors", "Quinolones", "Tetracyclines", "Bisphosphonates", "Levodopa", "Levothyroxine"]
+notes:
+  tips: "Take on empty stomach 30 mins before meals with water. Avoid taking with tea, coffee, or calcium."

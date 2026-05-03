@@ -1,11 +1,62 @@
 name: "Copper"
-biomarker: "Copper (Serum)"
-unit: "mcg/dL"
+symbol: "Cu"
+type: "Essential Mineral"
+biomarkers:
+  - name: "Free Serum Copper"
+    units: "mcg/dL"
+  - name: "Total Copper (Serum)"
+    units: "mcg/dL"
+  - name: "Ceruloplasmin"
+    info: "Protein that acts as a body copper store"
+functions:
+  - "Energy release from foods (cytochrome c oxidase)"
+  - "Recruiting iron from the body stores"
+  - "Integrity of connective tissue (skin, bones, heart muscle, vessels)"
+  - "Synthesis of signaling molecules in the brain (neurotransmitters: dopamine, serotonin, epinephrine)"
+  - "Synthesis of nerve sheaths"
+  - "Synthesis of melanin (pigment for skin, hair, eyes)"
+rda:
+  adults: "900 mcg (1 mg)/day"
+ai:
+  infants_0_6m: "200 mcg/day"
+  infants_7_12m: "220 mcg/day"
+food_sources:
+  high_plant: ["Baking chocolate", "Chestnuts", "Shiitake mushrooms", "Cashew nuts", "Sunflower seeds", "Hazelnuts", "Brazil nuts", "Walnuts", "Tomato paste", "Artichokes", "Pumpkin seeds", "Almonds", "Pecans", "Pistachios", "Turnip and beet greens", "Sweet potatoes", "Soybeans", "Spinach", "Navy and white beans", "Soy milk", "Chickpeas", "Potatoes", "Blackberries", "Raspberries", "Lentils", "Buckwheat groats", "Cowpeas", "Brown rice", "Tofu"]
+  high_animal: ["Beef liver", "Alaska king crabs", "Oysters", "Clams", "Chicken or turkey giblets", "Shrimps", "Duck meat", "Chinook salmon", "Sardines", "Chocolate milk"]
+  notes: "Municipal water and some mineral waters may be high in copper. Breast milk contains ~500 mcg/L."
 thresholds:
-  low: 70
-  normal: [70, 140]
-  high: 140
+  free_serum_copper:
+    normal: [10, 15]
+    unit: "mcg/dL"
+  total_copper_serum:
+    normal: [64, 140]
+    unit: "mcg/dL"
 recommendations:
-  low: "May cause anemia or bone issues. Increase intake of shellfish and seeds."
+  low: "Copper deficiency indicated. Risk of anemia, leukopenia, and bone disorders. Increase copper-rich foods or consult for supplementation."
   normal: "Copper levels are normal."
-  high: "Potential copper toxicity or Wilson's disease."
+  high: "Potential copper toxicity or genetic disorder (Wilson's disease). Consult a physician."
+deficiency:
+  causes: ["Preterm infants", "Infants fed with cow's milk formula", "Chronic alcoholics", "Cystic fibrosis", "Crohn's or celiac disease", "Gastric bypass", "Hemodialysis", "Zinc supplementation", "Penicillamine use", "Hereditary disorders of copper metabolism"]
+  symptoms: ["Anemia (unresponsive to iron)", "Leukopenia (low WBC)", "Increased susceptibility to infections", "Bone disorders (osteoporosis in children)", "Loss of pigmentation"]
+supplements:
+  forms_otc: ["Cupric oxide", "Copper gluconate", "Copper sulfate", "Copper amino acid chelates"]
+  forms_prescription: ["Cupric chloride (for total parenteral nutrition solutions)"]
+  effective_for: ["Prevention and treatment of copper deficiency"]
+  insufficient_evidence: ["Alzheimer's disease", "Arthritis", "Cancer", "Coronary heart disease", "Dental plaques", "Osteoporosis", "Skin conditions", "SLE", "Wound healing", "Immunity"]
+safety:
+  upper_limit: "10 mg/day (UL for adults)"
+  acute_toxicity:
+    causes: ["Contaminated water", "Copper containers"]
+    symptoms: ["Abdominal pain", "Nausea", "Vomiting", "Diarrhea", "Liver failure", "Kidney failure", "Coma", "Death"]
+  chronic_toxicity: "May cause liver or kidney damage. Avoid supplements without medical approval if liver/kidney disease is present."
+  wilson_disease:
+    description: "Genetic disorder where copper accumulates in liver, brain, kidneys, and eyes."
+    symptoms: ["Enlarged liver/spleen", "Jaundice", "Leg swelling", "Tremor", "Muscle stiffness", "Kayser-Fleischer rings (iris/cornea)"]
+    diagnosis: ["Low blood copper", "Low ceruloplasmin", "Liver biopsy"]
+    treatment: ["Zinc supplements", "Trientine hydrochloride", "D-penicillamine", "Low-copper diet"]
+low_copper_diet:
+  allowed: ["Chicken/turkey light meat", "Beef", "Most dairy", "Eggs", "Most vegetables", "Most fruits", "White bread/pasta", "Rice", "Regular oatmeal"]
+  avoid: ["Lamb", "Pork", "Duck", "Goose", "Shellfish", "Organ meats", "Chocolate milk", "Mushrooms", "Sweet potatoes", "Dried beans/peas", "Soy products", "Nuts", "Seeds", "Avocado", "Nectarine", "Dried fruits", "Millet", "Barley", "Wheat germ", "Buckwheat", "Bran", "Chocolate", "Cocoa", "Mineral water", "Soy beverages"]
+interactions:
+  - "High doses of zinc and antacids reduce copper absorption"
+  - "Penicillamine stimulates copper excretion"

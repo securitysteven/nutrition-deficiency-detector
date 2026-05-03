@@ -1,9 +1,77 @@
 name: "Zinc"
+synonyms: ["Zn"]
+type: "Mineral"
 biomarker: "Zinc (Serum)"
-unit: "mcg/dL"
+units:
+  primary: "mcg/dL"
+  secondary: "mcmol/L"
+functions:
+  - "Protein and DNA synthesis"
+  - "Development of organs and growth"
+  - "Immunity"
+  - "Wound healing"
+  - "Proper sense of taste and smell"
+rda:
+  infants_0_6m: "2 mg/day (AI)"
+  infants_7_12m: "3 mg/day"
+  adults: "8-11 mg/day"
+food_sources:
+  high_animal: ["Oysters (richest source)", "Beef", "Bison", "Lamb", "Pork", "Veal", "Crabs", "Chicken", "Turkey", "Mollusks", "Cheese", "Milk"]
+  high_plant: ["Cereals (fortified)", "Nuts", "Seeds", "Chickpeas", "Kidney beans", "Lentils", "Peas", "Cornmeal", "Rice (white/brown)", "Whole-wheat bread"]
+  notes: "Zinc from animal foods is absorbed better than from plant foods due to phytates in plants. Soaking beans until they sprout or using leavened bread (yeast) can increase zinc absorption."
 thresholds:
-  low: 60
-  normal: [60, 120]
+  deficient:
+    value: 60
+    unit: "mcg/dL"
+  normal:
+    range: [60, 120]
+    unit: "mcg/dL"
 recommendations:
-  low: "Risk of impaired immunity. Increase intake of meat, shellfish, and legumes."
+  deficient: "Zinc deficiency. May cause slow growth, delayed sexual development, impotence, impaired immunity, and loss of taste/smell. Treatment includes zinc supplements."
   normal: "Zinc levels are normal."
+deficiency:
+  causes:
+    - "Malabsorption (Celiac, Crohn's, Short Bowel Syndrome, gastric bypass)"
+    - "Medications (Tetracycline, Penicillamine, high doses of iron supplements)"
+    - "Chronic excessive alcohol intake"
+    - "Diabetes"
+    - "Chronic diarrhea"
+    - "Chronic liver disease"
+    - "Acrodermatitis enteropathica (genetic disorder)"
+    - "Increased needs (Cancer, Sickle cell anemia)"
+    - "Excessive loss (Diuretics, Chronic kidney disease)"
+    - "Starvation"
+  at_risk_groups:
+    - "Strict vegetarians (vegans)"
+    - "Pregnant and breastfeeding women"
+    - "Exclusively breastfed infants after 6 months of age"
+  symptoms:
+    - "Slow growth (adolescent nutritional dwarfism)"
+    - "Delayed sexual development"
+    - "Impotence in men"
+    - "Increased susceptibility to infections"
+    - "Diarrhea"
+    - "Weight loss"
+    - "Slow wound healing"
+    - "Loss of taste and smell"
+    - "Hair loss"
+    - "Skin lesions"
+    - "Night blindness (hampers Vitamin A release)"
+    - "Depression"
+supplements:
+  forms_otc: ["Zinc acetate", "Zinc gluconate", "Zinc-histidine", "Zinc picolinate", "Zinc sulfate"]
+  effective_for:
+    - "Prevention and treatment of zinc deficiency"
+    - "Acrodermatitis enteropathica"
+    - "Reducing diarrhea in malnourished children"
+    - "Wilson's disease"
+  safety_ul: "40 mg/day (adults)"
+  side_effects: ["Vomiting", "Diarrhea", "Headache"]
+  toxicity:
+    acute: "Single dose of 20-30 grams may be fatal."
+    chronic: "Low blood copper levels, low HDL cholesterol, increased infection risk. High doses (>100 mg/day) may increase prostate cancer risk."
+  warnings: "Avoid intranasal zinc ointments/sprays (may permanently damage sense of smell)."
+interactions:
+  decrease_absorption: ["Phytates (legumes/grains)", "High calcium intake (postmenopausal women)", "Iron supplements (>25 mg)", "Penicillamine", "DTPA", "Antibiotics (Tetracycline, Ciprofloxacin)", "Diuretics", "Sodium valproate"]
+  reduced_by_zinc: ["Copper supplements", "Penicillamine", "Antibiotics"]
+  notes: "Zinc deficiency can decrease the bioavailability of Vitamin A."

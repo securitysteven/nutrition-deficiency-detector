@@ -1,9 +1,46 @@
 name: "Manganese"
-biomarker: "Manganese (Serum)"
-unit: "mcg/L"
+symbol: "Mn"
+type: "Trace Element / Essential Nutrient"
+biomarker: "Manganese (Serum/Whole Blood)"
+units:
+  primary: "mcg/L"
+  secondary: "mg/L"
+functions:
+  - "Antioxidant activity"
+  - "Synthesis of glucose from non-carbohydrate molecules (gluconeogenesis)"
+  - "Removal of excessive ammonia from the body (urea cycle)"
+  - "Synthesis of collagen (bone strength, wound healing)"
+  - "Synthesis of proteoglycans (cartilage and bone strength)"
+ai:
+  men: "2.3 mg/day"
+  women: "1.8 mg/day"
+food_sources:
+  high_plant: ["Whole-wheat spaghetti", "Brown rice", "Teff", "Raisin bran cereal", "Oatmeal", "Spinach", "Pineapple", "Nuts (Pine nuts, Almonds, Peanuts)", "Soybeans", "Collards", "Sweet potato", "Okra", "Blackberries", "Tea"]
+  high_animal: ["Mollusks (Mussels)", "Fish (Bass, Burbot, Pike, Trout)", "Liver"]
+  notes: "Animal foods are generally not a good source except for specific seafood and organ meats. Drinking water typically contains <10 mcg/L. Breast milk (3-10 mcg/L) is sufficient for infants 0-6 months."
 thresholds:
-  low: 4
-  normal: [4, 15]
+  deficient:
+    value: 4
+    unit: "mcg/L"
+  normal:
+    range: [4, 15]
+    unit: "mcg/L"
 recommendations:
-  low: "Uncommon deficiency. Increase intake of whole grains and nuts."
+  deficient: "Manganese deficiency suspected (<4 mcg/L). May result in skeletal abnormalities, impaired growth, and slow wound healing. Increase intake of whole grains, nuts, and leafy greens."
   normal: "Manganese levels are normal."
+  high: "Excessive manganese (UL 9 mg/day) may cause serious side effects, including tremors resembling Parkinson's disease."
+deficiency:
+  symptoms: ["Skeletal abnormalities", "Impaired growth", "Slow wound healing", "Decreased blood cholesterol levels", "Impaired glucose intolerance", "Skin rash"]
+  notes: "Manganese deficiency is not common."
+supplements:
+  forms_otc: ["Manganese gluconate", "Manganese sulfate", "Manganese ascorbate", "Multivitamin/mineral combinations", "Combinations with chondroitin sulfate and glucosamine hydrochloride"]
+  effective_for: ["Preventing or treating manganese deficiency"]
+  insufficient_evidence: ["Premenstrual syndrome (PMS)", "Anemia", "Osteoporosis", "Osteoarthritis", "Diabetes", "Epilepsy"]
+safety:
+  upper_limit: "9 mg/day (UL for adults)"
+  toxicity_symptoms: ["Tremors resembling Parkinson's disease", "Lowered intellectual capabilities (observed in children with high water intake)"]
+  notes: "Toxicity from food has not been documented. EPA maximum for drinking water is 50 mcg/L. High-risk groups: newborns, children, individuals with liver disorders or iron deficiency."
+interactions:
+  - "Calcium, iron, and zinc supplements may decrease manganese absorption (take 2 hours apart)"
+  - "Phytates from whole grains and legumes may decrease manganese absorption"
+  - "Manganese may decrease absorption of certain antibiotics (ciprofloxacin, demeclocycline, minocycline, tetracycline) (take 2 hours apart)"
