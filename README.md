@@ -78,3 +78,10 @@ pip install -r requirements.txt
 # Run on a sample CSV (columns: test\_name, value, unit)
 python -m ndd detect samples/example\_blood\_test.csv
 ```
+
+---
+
+## Sources
+
+- [Nutrients Review: Essential Nutrients](https://www.nutrientsreview.com/glossary/essential-nutrients)
+- [Dietary Reference Intakes: The Essential Guide to Nutrient Requirements](https://www.ncbi.nlm.nih.gov/books/NBK56068/)
