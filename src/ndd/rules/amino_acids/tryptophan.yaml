@@ -1,9 +1,59 @@
 name: "Tryptophan"
+abbreviation: "Trp"
+type: "Essential Amino Acid"
 biomarker: "Tryptophan (Plasma)"
 unit: "mcmol/L"
+functions:
+  - "Building block of proteins"
+  - "Precursor for vitamin B3 (niacin)"
+  - "Precursor for neurotransmitter serotonin (calming effect on mood)"
+  - "Precursor for hormone melatonin (induces sleep)"
+  - "Glucogenic amino acid (can be converted into glucose)"
+  - "Ketogenic amino acid (can be converted into ketones)"
+  - "Necessary for normal growth in infants"
+  - "Necessary for nitrogen balance in adults"
+food_sources:
+  high:
+    animal: ["Pork", "Beef", "Lamb", "Veal", "Salmon", "Fish", "Oysters", "Lobsters", "Crabs", "Shrimps", "Turkey", "Egg whites", "Cheese"]
+    plant: ["Spinach", "Watercress", "Turnip greens", "Asparagus", "Sesame seeds", "Sunflower seeds", "Winged beans", "Mung beans", "Kidney beans", "Soy products", "Peanuts", "Bananas", "Pineapples", "Plums", "Oat bran", "Spirulina"]
+  low: ["Beans", "Peas", "Lentils", "Peanuts", "Cornmeal", "Potatoes", "Mushrooms", "Kale"]
+  notes: "Turkey does not contain more tryptophan than other meats. Tryptophan competes with other amino acids for brain entry; a high-protein diet may decrease brain tryptophan levels."
 thresholds:
-  low: 40
-  normal: [40, 80]
+  low:
+    value: 40
+    unit: "mcmol/L"
+  normal:
+    range: [40, 80]
+    unit: "mcmol/L"
 recommendations:
-  low: "Increase intake of turkey, eggs, and cheese."
+  low: "Tryptophan levels are low. Increase intake of protein-rich foods. Deficiency may lower mood or trigger depression in susceptible individuals. Severe deficiency can lead to Pellagra."
   normal: "Tryptophan levels are normal."
+effective_for:
+  possibly_effective:
+    - "Treatment of premenstrual dysphoric disorder (PMDD)"
+    - "Helping quitting smoking"
+    - "Improvement of symptoms of phenylketonuria"
+  possibly_ineffective:
+    - "Prevention or treatment of teeth grinding and facial pain"
+    - "Improving athletic performance"
+supplements:
+  info: "Typically contain 500-1000 mg tryptophan per capsule. Available OTC and by prescription."
+  safety: "Possibly unsafe. Associated with eosinophilia-myalgia syndrome (EMS) in the past (1991 FDA ban, though currently available)."
+  side_effects: ["Heartburn", "Stomach pain", "Burping", "Gas", "Nausea", "Vomiting", "Diarrhea", "Loss of appetite", "Headache", "Lightheadedness", "Dry mouth", "Blurred vision", "Muscle weakness", "Sexual problems"]
+  ems_symptoms: ["Fatigue", "Muscle/nerve pain", "Joint swelling", "Rash", "Baldness", "Organ damage (lungs, heart, liver)"]
+  warnings:
+    - "Speak with a doctor before using during pregnancy, breastfeeding, or giving to a child."
+  interactions:
+    - "Antidepressants (St. John's wort, SSRIs, MAOIs)"
+    - "Sedatives (Valium, Ativan)"
+    - "Anti-psychotics"
+    - "Substances with sedative effects (alcohol, pain relievers, muscle relaxants)"
+disorders:
+  hartnup_disease:
+    description: "Hereditary disorder with reduced absorption/reabsorption of tryptophan and other amino acids."
+    symptoms: "Pellagra-like rash, inflamed gums/tongue, neurological symptoms (double vision, wide gait), mood changes."
+    treatment: "High-protein diet and vitamin B3 (nicotinamide) supplements."
+    notes: "Symptoms may be triggered by sun exposure, febrile illness, or certain drugs."
+  deficiency:
+    causes: ["Diet predominantly based on whole corn (poor absorption)", "Low dietary intake"]
+    complications: ["Pellagra", "Mood disorders", "Depression"]
