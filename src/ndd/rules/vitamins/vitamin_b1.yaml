@@ -1,9 +1,65 @@
 name: "Vitamin B1"
-biomarker: "Thiamin Pyrophosphate (TPP)"
-unit: "nmol/L"
+abbreviations: ["B1", "Thiamin", "Thiamine", "Aneurin"]
+type: "Essential Nutrient / Water-soluble Vitamin"
+biomarker: "Blood Thiamine (Blood test)"
+units:
+  primary: "mg/day (RDA)"
+  info: "Deficiency confirmed by blood test (Thiamine injection/infusion used for treatment)"
+functions:
+  - "Energy production from food"
+  - "Glucose metabolism"
+  - "Enables proper functioning of nerves, brain, muscles, and heart"
+  - "Activating molecule (cofactor, coenzyme) for enzymes breaking down carbs and proteins"
+  - "Involved in production of gastric acid"
+  - "Production of neurotransmitters GABA and acetylcholine"
+  - "Maintenance of myelin nerve sheaths"
+  - "Breakdown of alcohol"
+rda:
+  men: "1.2 mg/day"
+  women: "1.1 mg/day"
+  pregnancy_breastfeeding: "1.4 mg/day"
+food_sources:
+  high_plant: ["Vegetarian meatless products", "Enriched breakfast cereals", "Yeast extract spread", "Brewer's yeast"]
+  high_animal: ["Pork", "Fish"]
+  fortified: ["Flour (baked products)", "White rice", "Morning cereals", "Certain fruit juices"]
+  notes: "Washing fortified rice removes most nutrients. Storing/cooking can decrease B1 content by ~50%."
 thresholds:
-  deficient: 70
-  normal: [70, 180]
+  deficient:
+    value: 70
+    unit: "nmol/L"
+    note: "Early symptoms can develop within 1 week to 1 month of reduced intake."
+  normal:
+    range: [70, 180]
+    unit: "nmol/L"
 recommendations:
-  deficient: "Risk of Beriberi or Wernicke-Korsakoff. Increase intake of whole grains and legumes."
-  normal: "Thiamin levels are normal."
+  deficient: "Risk of Beriberi or Wernicke-Korsakoff. Symptoms: weakness, nausea, tingling feet, fast heart beat. Treat with thiamine injection or tablets (5-30 mg/day for mild, higher for alcoholics/Wernicke's)."
+  normal: "Thiamin levels are normal. Healthy individuals on regular diets generally do not need supplements."
+deficiency:
+  at_risk: ["Chronic alcoholics", "Polished rice diets", "Starvation/Anorexia", "Celiac/Crohn's disease", "Gastric bypass", "Diabetics with kidney damage", "Hemodialysis"]
+  symptoms_beriberi:
+    early: ["Weakness", "Nausea", "Tingling feet", "Fast heart beat"]
+    advanced: ["Severe leg muscle weakness/cramps", "Peripheral neuropathy (burning feet syndrome)", "Congestive heart failure (leg swelling, fatigue)", "Wernicke's encephalopathy (brain damage, confusion)", "Korsakoff psychosis (amnesia, confabulation)"]
+supplements:
+  forms_water_soluble: ["Thiamine mononitrate (TMN)", "Thiamine hydrochloride (THCl)", "Thiamine pyrophosphate (TPP)"]
+  forms_fat_soluble: ["Thiamine propyl disulfide (TPD/prosultiamine)", "Allithiamine (garlic)", "TTFD (fursultiamine)", "Sulbutiamine", "Benfotiamine"]
+  effective_for: ["Vitamin B1 deficiency", "Wernicke-Korsakoff syndrome", "Genetic disorders (Leigh's, MSUD, TRMA)"]
+  possibly_effective: ["Prevention of kidney damage in diabetes 2", "Prevention of cataracts", "Prevention of acute thiamine deficiency in alcoholics"]
+  dosage_guidelines:
+    mild_deficiency: "5-30 mg/day"
+    chronic_alcoholics_risk: "Up to 50 mg/day (oral) or 250 mg/day (IM)"
+    wernicke_encephalopathy: "IM 15-300 mg/day or IV 100-1500 mg/day"
+safety:
+  general: "Safe to use; overdose practically impossible as excess is lost in urine."
+  toxicity: "Rare allergic reactions (anaphylaxis) after repeated IV infusions, not oral intake."
+  pregnancy_category:
+    A: "Within RDA (1.4 mg/day)"
+    C: "Above 1.4 mg/day (Insufficient human studies)"
+interactions:
+  medications_lowering_b1: ["Antacids", "Diuretics", "Phenytoin", "Birth control pills", "Certain antibiotics", "Sulfa drugs", "5-fluorouracil", "Methotrexate"]
+  anti_thiamin_factors: ["Raw freshwater fish", "Raw shellfish", "Ferns", "African silkworms", "Areca (betel) nuts", "Horsetail"]
+  other_deficiencies: ["Folate and magnesium deficiency reduce thiamine activity"]
+  triggers: "Glucose infusion may trigger Wernicke encephalopathy in malnourished individuals (refeeding syndrome)."
+notes:
+  absorption: "Mainly in upper small intestine (jejunum)"
+  body_stores: "Depleted within 1 month of cessation (water-soluble)"
+  faq: "B1 does not cause yellow urine (that's B2)."

@@ -1,9 +1,45 @@
 name: "Choline"
-biomarker: "Free Choline"
-unit: "mcmol/L"
+type: "Conditionally Essential Nutrient"
+biomarker: "Free Choline (Plasma)"
+units:
+  primary: "mcmol/L"
+  info: "Can be produced in small amounts by the body; dietary intake is necessary to meet needs."
+functions:
+  - "Synthesis of lecithin (phosphatidylcholine) and sphingomyelin in cell membranes"
+  - "Synthesis of acetylcholine (muscle contraction, nervous system function)"
+  - "Transport of fats and cholesterol from liver (as part of VLDL)"
+  - "Synthesis of betaine"
+ai:
+  men: "550 mg/day"
+  women: "425 mg/day"
+food_sources:
+  high_plant: ["Wheat germ", "Shiitake mushrooms", "Corn", "Beans (soy, mung)", "Lentils", "Chickpeas", "Collards", "Beet greens", "Brussel's sprouts", "Broccoli", "Cauliflower"]
+  high_animal: ["Organ meats (liver, kidney, brain, heart)", "Beef", "Veal", "Pork", "Fish (salmon, cod, mackerel)", "Seafood (shrimps, oysters, crabs, clams)", "Eggs (yolks)", "Chicken", "Turkey"]
+  notes: "In foods, choline is typically in the form of phosphatidylcholine (lecithin). Breast milk contains 160 mg/L."
 thresholds:
-  low: 7
-  normal: [7, 20]
+  deficient:
+    value: 7
+    unit: "mcmol/L"
+  normal:
+    range: [7, 20]
+    unit: "mcmol/L"
 recommendations:
-  low: "May lead to fatty liver or muscle damage. Increase intake of eggs and meat."
+  deficient: "Choline deficiency indicated (<7 mcmol/L). Risk of fatty liver and muscle damage. Increase intake of choline-rich foods or consult for supplementation."
   normal: "Choline levels are normal."
+  high: "Excessive intake (>3.5g/day) may cause vomiting, excessive salivation, sweating, and fishy body odor."
+deficiency:
+  at_risk: ["Strict vegetarians (vegans)", "Patients on Methotrexate (cancer, rheumatoid arthritis)"]
+  symptoms: ["Fatty liver", "Increased ALT levels"]
+  notes: "Fats accumulate in the liver because they cannot be incorporated into VLDL lipoproteins."
+supplements:
+  forms_otc: ["Choline chloride", "Choline bitartrate", "Choline alfoscerate", "Phosphatidylcholine (lecithin)"]
+  forms_prescription: ["Choline magnesium trisalicylate (NSAID for RA)"]
+  effective_for: ["Prevention and treatment of choline deficiency"]
+  some_evidence: ["Asthma"]
+  possibly_ineffective: ["Alzheimer's disease", "Cerebellar ataxia", "Schizophrenia", "Athletic performance"]
+safety:
+  upper_limit: "3.5 g/day (UL for adults)"
+  overdose_symptoms: ["Vomiting", "Excessive salivation", "Sweating", "Fainting (low blood pressure)", "Fishy body odor"]
+  general: "Likely safe for most adults, children, and pregnant women in recommended amounts."
+notes:
+  classification: "Considered a vitamin by the Institute of Medicine (US)."

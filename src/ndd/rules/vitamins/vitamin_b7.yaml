@@ -1,9 +1,52 @@
 name: "Vitamin B7"
-biomarker: "Biotin"
-unit: "pg/mL"
+abbreviations: ["B7", "Biotin", "Vitamin H"]
+type: "Essential Nutrient / Water-soluble Vitamin"
+biomarker: "Biotin (Serum/Plasma)"
+units:
+  primary: "mcg/day (AI)"
+  info: "Biotin is involved in the metabolism of fatty acids, amino acids, and glucose."
+functions:
+  - "Metabolism of fatty acids"
+  - "Metabolism of amino acids"
+  - "Glucose metabolism (gluconeogenesis)"
+ai:
+  adults: "30 mcg/day"
+  pregnancy: "30 mcg/day"
+  breastfeeding: "35 mcg/day"
+food_sources:
+  high_plant: ["Peanuts", "Almonds", "Sunflower seeds", "Walnuts", "Pecans", "Sweet potatoes", "Strawberries", "Mushrooms", "Broccoli", "Avocado", "Spinach", "Carrots"]
+  high_animal: ["Liver", "Egg yolks", "Fish (salmon)", "Pork"]
+  other: ["Baker's yeast"]
+  notes: "Intestinal bacteria synthesize biotin, but absorption is uncertain. Raw egg whites contain avidin which binds biotin and prevents absorption (denatured by cooking)."
 thresholds:
-  low: 200
-  normal: [200, 1100]
+  deficient:
+    value: 200
+    unit: "pg/mL"
+    note: "Biotin deficiency is rare."
+  normal:
+    range: [200, 1100]
+    unit: "pg/mL"
 recommendations:
-  low: "May cause hair loss or skin rash. Increase intake of eggs and nuts."
+  deficient: "Biotin deficiency indicated. Symptoms may include hair loss, red scaly rash on face/genitalia, and neurological issues. Treat with biotin supplements."
   normal: "Biotin levels are normal."
+deficiency:
+  causes: ["Starvation", "Rapid weight loss", "Consumption of raw egg whites (avidin)", "Prolonged anticonvulsant treatment", "Prolonged antibiotic treatment"]
+  symptoms:
+    early: ["Hair loss", "Red scaly rash on face and genitalia (seborrheic dermatitis)", "Fungal infections", "Cradle cap (infants)"]
+    later: ["Nausea", "Vomiting", "Tingling in arms and legs", "Depression", "Hallucinations"]
+disorders:
+  biotinidase_deficiency: "Rare hereditary disorder causing reduced biotin absorption. Symptoms include alopecia, seizures, and failure to thrive. Treated with oral biotin."
+supplements:
+  forms_otc: ["D-biotin (Tablets)"]
+  forms_prescription: ["D-biotin (IM/IV injection)"]
+  effective_for: ["Biotin deficiency prevention/treatment", "Deficiency in kidney dialysis patients"]
+  insufficient_evidence: ["Seborrheic dermatitis", "Acne", "Hair loss", "Brittle nails", "Diabetes", "Diabetic nerve pain"]
+safety:
+  general: "Not known to be toxic even in high doses; no significant side effects observed."
+  pregnancy_category: "Not determined (Consult doctor before use during pregnancy/breastfeeding)"
+interactions:
+  medications_reducing_activity: ["Primidone", "Carbamazepine", "Phenobarbital", "Phenytoin"]
+  other: ["Large doses of Vitamin B5 (Pantothenic Acid) may decrease biotin absorption"]
+notes:
+  etymology: "From Greek 'biote' meaning 'life'."
+  absorption: "Can be absorbed in both small and large intestine."
