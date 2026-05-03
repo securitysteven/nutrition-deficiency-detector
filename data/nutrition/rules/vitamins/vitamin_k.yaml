@@ -1,0 +1,58 @@
+name: "Vitamin K"
+abbreviations: ["K", "Phylloquinone", "Menaquinone", "Menadione"]
+type: "Essential Nutrient / Fat-soluble Vitamin"
+biomarker: "Vitamin K1 (Phylloquinone)"
+units:
+  primary: "nmol/L"
+  secondary: "mcg/L"
+  info: "K1 (plant-derived), K2 (bacterial synthesis), K3 (synthetic). Essential for blood clotting and bone strength."
+functions:
+  - "Normal function of blood clotting factors (coagulation)"
+  - "Normal bone strength"
+ai:
+  men: "120 mcg/day"
+  women: "90 mcg/day"
+  pregnancy_breastfeeding: "90 mcg/day"
+food_sources:
+  high_plant: ["Green leafy vegetables", "Nuts (pine nuts, cashews)", "Fruits", "Vegetable oils", "Margarines"]
+  high_animal: ["Tuna (light)", "Abalone"]
+  notes: "Other animal foods contain small amounts. Large intestinal bacteria produce K2, but contribution to total needs is unclear. Cooking and processing typically maintain K stability."
+thresholds:
+  deficient:
+    value: 0.2
+    unit: "nmol/L"
+    note: "Deficiency is confirmed by elevated Prothrombin Time (PT)."
+  normal:
+    range: [0.2, 3.2]
+    unit: "nmol/L"
+recommendations:
+  deficient: "Vitamin K deficiency indicated. High risk of impaired blood clotting (bleeding gums, nosebleeds, easy bruising). Consult healthcare provider for supplementation or injection."
+  normal: "Vitamin K levels are normal."
+deficiency:
+  causes:
+    malabsorption: ["Liver/Bile duct disease", "Chronic pancreatitis", "Cystic fibrosis", "Celiac/Crohn's disease", "Ulcerative colitis", "Parasites", "SIBO", "Short Bowel Syndrome (SBS)", "Gastric bypass"]
+    medications: ["Warfarin (Anticoagulant)", "Cholestyramine", "Cefamandole", "Cefoperazone", "Salicylates", "Rifampin", "Isoniazid", "Barbiturates", "Mineral oils", "Orlistat", "Olestra"]
+    dietary: ["Exclusively breastfed infants (poor placental transfer)", "Chronic alcoholism", "Severe malnutrition"]
+    other: ["Multiple myeloma", "Massive transfusion", "DIC", "Polycythemia vera", "Nephrotic syndrome", "Leukemia"]
+  symptoms: ["Heavy menstrual bleeding", "Nosebleeds", "Gum bleeding", "Blood in urine/stool", "Excessive bruising"]
+  newborn_disorder:
+    name: "Vitamin K Deficiency Bleeding (VKDB)"
+    at_risk: ["Mothers taking anticonvulsants/rifampin/isoniazid", "Exclusively breastfed infants without birth injection"]
+    symptoms: ["Bleeding from umbilicus/GI tract/nose/mouth", "Skull bleeding (rare/life-threatening)"]
+supplements:
+  forms_otc: ["Multivitamins (small amounts of K1/K2)"]
+  forms_prescription: ["Vitamin K1 (Phylloquinone) tablets/injections", "Vitamin K2 (Phytomenadione)"]
+  effective_for: ["Deficiency treatment", "Reversing warfarin overdose"]
+safety:
+  upper_limit: "None established (UL not set)"
+  side_effects: ["Decreased appetite", "Irritability", "Yellow eyes/skin", "Paleness", "Enlarged liver", "Muscle stiffness", "Difficulty breathing", "Altered taste", "Flushing"]
+  injection_risks: ["Anaphylactic reaction (IV)", "Drop in blood pressure", "Fainting", "Facial swelling"]
+  pregnancy_category: "C (Insufficient studies to exclude risks)"
+  breastfeeding: "Safe to use"
+interactions:
+  lower_absorption: ["Cholestyramine", "Cholestipol", "Orlistat", "Mineral oil", "Olestra", "Antibiotics", "Salicylates", "High-dose Vitamin A"]
+  vitamin_e_interaction: "High doses (>800 IU) reduce Vitamin K clotting effect"
+  warfarin_interaction: "High Vitamin K/CoQ10 doses lower warfarin effect (increases clot risk)"
+notes:
+  etymology: "From German 'Koagulation' (blood clotting)."
+  diagnosis: "Elevated Prothrombin Time (PT) that normalizes after Vitamin K injection confirms deficiency."

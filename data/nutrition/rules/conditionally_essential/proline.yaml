@@ -1,0 +1,9 @@
+name: "Proline"
+biomarker: "Proline (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 100
+  normal: [100, 430]
+recommendations:
+  low: "Increase intake of collagen-rich foods like bone broth. Proline is essential for tissue repair."
+  normal: "Proline levels are normal."

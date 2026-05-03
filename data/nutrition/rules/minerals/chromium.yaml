@@ -1,0 +1,42 @@
+name: "Chromium"
+symbol: "Cr"
+type: "Essential Mineral"
+biomarker: "Chromium (Serum/Plasma)"
+units:
+  primary: "mcg/L"
+  notes: "Hair, blood, and urine levels do not necessarily reflect body stores."
+functions:
+  - "Enhances the effects of insulin (e.g., glucose uptake by cells)"
+  - "Role in metabolism"
+ai:
+  men: "35 mcg/day"
+  women: "25 mcg/day"
+food_sources:
+  high_plant: ["Red wine", "Broccoli", "Grape juice", "Waffle", "English muffin", "Potatoes (mashed)", "Bagel", "Whole-wheat bread", "Orange juice", "Apple", "Green beans", "Banana"]
+  high_animal: ["Turkey ham (processed)", "Beef", "Turkey breast"]
+  notes: "Chromium is stored in the liver, spleen, soft tissues, and bones."
+thresholds:
+  deficient:
+    value: 0.1
+    unit: "mcg/L"
+  normal:
+    range: [0.1, 2.1]
+    unit: "mcg/L"
+recommendations:
+  deficient: "Chromium deficiency may impair glucose regulation. Increase intake of chromium-rich foods. Note that blood levels may not reflect body stores."
+  normal: "Chromium levels are normal."
+  high: "Excessive supplemental intake may cause skin irritation, headaches, dizziness, nausea, and mood changes."
+deficiency:
+  causes: ["High sugar diet (>35% sugar)", "Pregnancy and breastfeeding", "Hard exercise or trauma", "Severe malnutrition"]
+  notes: "Levels in hair, blood, and urine do not necessarily reflect body stores."
+supplements:
+  forms_otc: ["Chromium nicotinate", "Chromium citrate", "High-chromium yeast", "Chromium chloride (may be less effective)", "Chromium picolinate"]
+  effective_for: ["Prevention and treatment of chromium deficiency"]
+  insufficient_evidence: ["Weight loss", "Increasing muscle mass", "Lowering glucose, insulin or blood fats", "Diabetes prevention/treatment", "Depression", "Turner's syndrome", "PCOS", "Hypoglycemia"]
+safety:
+  side_effects: ["Skin irritation", "Headaches", "Dizziness", "Nausea", "Mood changes", "Impaired judgment and coordination"]
+  warnings: ["Chromium picolinate associated with kidney failure and impaired liver function in some cases", "Allergy risk in those with chromate or leather allergy", "May worsen certain psychiatric conditions", "Avoid if kidney or liver problems exist"]
+interactions:
+  decrease_absorption: ["High simple carbohydrate diet (sucrose, fructose, glucose)", "Zinc supplements", "Corticosteroids", "Antacids", "H2 blockers (cimetidine)", "Proton pump inhibitors (omeprazole)"]
+  increase_absorption: ["Vitamin C", "Vitamin B3 (niacin)", "Beta blockers (propranolol)", "Insulin", "NSAIDs (aspirin, ibuprofen, indomethacin, naproxen, piroxicam)"]
+  risks: ["Poisoning risk if taken with Horsetail (Equisetum arvense) or Cascara (Rhamnus purshiana)", "Hypoglycemia risk if taken with insulin", "May reduce effectiveness of levothyroxine and zinc supplements"]

@@ -1,0 +1,9 @@
+name: "Serine"
+biomarker: "Serine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 50
+  normal: [50, 150]
+recommendations:
+  low: "Increase intake of soy, eggs, and dairy. Serine is important for brain health and cell membrane synthesis."
+  normal: "Serine levels are normal."

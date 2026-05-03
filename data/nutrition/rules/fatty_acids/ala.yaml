@@ -1,0 +1,44 @@
+name: "Alpha-Linolenic Acid"
+abbreviation: "ALA"
+type: "Essential Omega-3 Fatty Acid"
+biomarker: "ALA (Plasma)"
+unit: "% of total fatty acids"
+functions:
+  - "Essential omega-3 polyunsaturated fatty acid"
+  - "Precursor to Eicosapentaenoic acid (EPA) and Docosahexaenoic acid (DHA) (though conversion is inefficient)"
+  - "May reduce levels of C-reactive protein (CRP), a marker of inflammation"
+food_sources:
+  high:
+    oils:
+      - "Flaxseed oil (7g per tbsp)"
+      - "Walnut oil (1.5g per tbsp)"
+      - "Canola oil (1.5g per tbsp)"
+      - "Mustard oil (1g per tbsp)"
+    seeds_nuts:
+      - "Chia seeds (5g per oz)"
+      - "Walnuts, English (2.5g per oz)"
+      - "Walnuts, black (0.5g per oz)"
+    other: ["Soybeans"]
+thresholds:
+  low:
+    value: 0.3
+    unit: "% of total fatty acids"
+  normal:
+    range: [0.3, 1.0]
+    unit: "% of total fatty acids"
+recommendations:
+  low: "ALA levels are low. Increase intake of ALA-rich foods like flaxseed oil, chia seeds, and walnuts. ALA is a precursor to EPA and DHA, although conversion is inefficient. Inadequate intake may be linked to increased inflammation markers (CRP)."
+  normal: "ALA levels are normal."
+supplements:
+  info: "Nonprescription flaxseed (linseed) oil and walnut oil supplements are available."
+  benefits:
+    insufficient_evidence: ["Anxiety", "Atherosclerosis", "ADHD", "Breast cancer", "Prostate cancer", "Constipation", "Coronary heart disease", "Diabetes mellitus type 2", "Dry eyes and skin", "High blood pressure", "HIV/AIDS", "Pneumonia", "Polycystic ovary syndrome (PCOS)", "Exercise performance", "Weight loss"]
+    notes: "Beneficial effects may be more pronounced in individuals who rarely eat fish. Most benefits are mediated through conversion to EPA/DHA."
+safety:
+  side_effects: ["Diarrhea (with large doses >30g/day)", "Allergic reactions possible"]
+  warnings:
+    - "Possible connection between high ALA intake and risk of prostate cancer"
+    - "Safety in pregnancy and lactation has not been evaluated; avoid use unless prescribed"
+notes:
+  - "ALA is much less effective in preventing heart disease than fish oil (EPA/DHA)"
+  - "High ALA intake is not associated with lower total/LDL cholesterol or triglyceride levels"

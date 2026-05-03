@@ -1,0 +1,59 @@
+name: "Vitamin E"
+abbreviations: ["Tocopherol"]
+type: "Essential Nutrient / Fat-soluble Vitamin"
+biomarker: "Alpha-tocopherol (Serum)"
+units:
+  primary: "mg/L"
+  info: "Absorbed in small intestine in presence of fats, bile, and pancreatic enzymes."
+functions:
+  - "Antioxidant activity"
+  - "Active function specifically attributed to alpha-tocopherol"
+rda:
+  adults: "15 mg (22.4 IU)/day"
+  pregnancy: "15 mg (22.4 IU)/day"
+  lactation: "19 mg (28.4 IU)/day"
+food_sources:
+  high_plant: ["Sunflower seeds", "Wheat germ", "Almonds", "Hazelnuts", "Peanuts", "Vegetable oils", "Dark green leafy vegetables", "Taro", "Sweet potato", "Pumpkin", "Avocado", "Kiwifruit"]
+  high_animal: ["Oily fish (sardines, salmon, herring, trout, mackerel)", "Mollusks (abalone, conch, snails)", "Shrimps"]
+  fortified: ["Ready-to-eat cereals", "Nutrition bars", "Margarines", "Peanut butter", "Beverages"]
+  infants: "Breast milk contains ~1 mg/liter. AI: 4 mg/day (0-6m), 5 mg/day (7-12m)."
+thresholds:
+  deficient:
+    value: 5
+    unit: "mg/L"
+  normal:
+    range: [5, 20]
+    unit: "mg/L"
+recommendations:
+  deficient: "Vitamin E deficiency indicated. Risk of impaired balance, muscle weakness, and vision problems (retinitis pigmentosa). Consult healthcare provider."
+  normal: "Vitamin E levels are normal."
+  high: "Excessive intake may increase risk of hemorrhagic stroke or bleeding. UL is 1,000 mg/day."
+deficiency:
+  causes:
+    malabsorption: ["Pancreatic, liver, gallbladder, or bile duct disease", "Celiac disease", "Crohn's disease", "Cystic fibrosis", "SIBO", "Weight loss surgery"]
+    other: ["Premature infants with low birth weight", "Unfortified formula", "Genetic diseases (Abetalipoproteinemia, AVED)"]
+  symptoms: ["Impaired balance", "Abnormal sensations", "Muscle weakness", "Vision problems (retinitis pigmentosa)"]
+supplements:
+  forms_otc:
+    natural: "d-alpha-tocopherol (RRR-alpha-tocopherol)"
+    synthetic: "dl-alpha-tocopherol (Acetate, Succinate, or Phosphate) - 50% activity of natural"
+    other: ["Gamma-tocopherol", "Tocotrienols"]
+  forms_prescription: ["Alpha-tocopherol (IM injection)", "Alpha-tocopherol (Dermal patch)"]
+  effective_for: ["Prevention and treatment of deficiency"]
+  possibly_ineffective: ["Anemia", "Cancer", "Heart disease", "Asthma", "Osteoarthritis", "Stroke"]
+safety:
+  upper_limit: "1,000 mg (1,500 IU)/day"
+  side_effects: ["Nausea", "Diarrhea", "Stomach cramps", "Fatigue", "Headache", "Blurred vision", "Rash"]
+  complications: ["Increased hemorrhagic stroke risk (long-term)", "Worsening bleeding disorders", "Worsening retinitis pigmentosa", "Increased bleeding risk during surgery"]
+  pregnancy_category:
+    A: "Within RDA"
+    C: "Above RDA (Insufficient studies)"
+interactions:
+  - "Increases risk of hemorrhage with blood thinners or Vitamin K deficiency"
+  - "Cholestyramine, Colestipol, Isoniazid, Mineral oil, Orlistat, Sucralfate lower absorption"
+  - "Phenobarbital, Phenytoin, Carbamazepine lower blood levels"
+  - "Increases effects/side effects of Cyclosporin"
+  - "Increases bruising/bleeding risk with Aspirin, NSAIDs, Warfarin, and certain herbs (Garlic, Ginkgo, etc.)"
+  - "May decrease effect of Lovastatin, Ketoconazole, and other drugs broken down by the liver"
+notes:
+  etymology: "From Greek 'toko' (childbirth) and 'pherein' (to carry)."

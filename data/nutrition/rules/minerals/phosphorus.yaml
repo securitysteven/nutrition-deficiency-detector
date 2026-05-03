@@ -1,0 +1,59 @@
+name: "Phosphorus"
+synonyms: ["Phosphate"]
+type: "Mineral"
+biomarker: "Phosphorus (Serum)"
+units:
+  primary: "mg/dL"
+  secondary: "mmol/L"
+functions:
+  - "Contributes to bone strength"
+  - "Production of energy from food"
+  - "Activates various enzymes, vitamins, and hormones"
+  - "Helps maintain acid-base balance"
+rda:
+  infants_0_6m: "100 mg (AI)"
+  infants_7_12m: "275 mg (AI)"
+  children_1_3y: "460 mg"
+  children_4_8y: "500 mg"
+  children_9_18y: "1250 mg (including pregnancy/breastfeeding)"
+  adults_19_plus: "700 mg (including pregnancy/breastfeeding)"
+food_sources:
+  high_animal: ["Cheese (goat, American, romano, cheddar, Swiss, etc.)", "Fast food (burrito, hamburger, pizza, hot dog)", "Sardines (with bones)", "Sheep milk", "Organ meats (brain, heart, kidney, liver)", "Seafood (salmon, cod, trout, tuna, clams, mussels, shrimp)", "Milk (cow, goat, fat/nonfat)", "Eggs"]
+  high_plant: ["Meatless meat substitutes", "Seeds (pumpkin, squash, sunflower)", "Biscuits", "Soybeans", "Tempeh", "Oatmeal", "Potato", "Beans (kidney, lima, mungo, navy, etc.)", "Nuts (almonds, cashews, peanuts, walnuts)", "Mushrooms", "Brown rice", "Whole wheat bread"]
+  additives: ["Phosphoric acid (E338)", "Sodium phosphates (E339)", "Potassium phosphates (E340)", "Calcium phosphates (E341)", "Diphosphates (E450)", "Polyphosphates (E452)", "Lecithins (E322)"]
+  notes: "Absorption: 10-50% from plant foods, ~50% from animal foods, 80-100% from additives/supplements."
+thresholds:
+  deficient:
+    value: 2.5
+    unit: "mg/dL"
+  normal:
+    range: [2.5, 4.5]
+    unit: "mg/dL"
+    secondary_range: [0.8, 1.4]
+    secondary_unit: "mmol/L"
+  high:
+    value: 4.5
+    unit: "mg/dL"
+urine_test:
+  name: "24-hour Urine Phosphate"
+  normal_range: "400-1300 mg/24h"
+  causes_high: ["Large intake of phosphorus-rich foods", "Diet high in fructose", "Low calcium or potassium intake", "Hyperparathyroidism", "Diabetes mellitus", "Cancer"]
+  causes_low: ["Diet low in phosphate", "High potassium intake", "Chronic kidney disease", "Intestinal malabsorption", "Vitamin D deficiency"]
+recommendations:
+  deficient: "Hypophosphatemia. May cause muscle weakness, numbness, and tingling. Treatment includes addressing underlying cause and phosphate/vitamin D supplements."
+  normal: "Phosphorus levels are normal."
+  high: "Hyperphosphatemia. Usually associated with kidney failure. Can lead to hypocalcemia and calcium-phosphate deposits in organs. Requires low-phosphorus diet and potentially phosphate binders."
+deficiency:
+  acute_causes: ["Refeeding syndrome", "Alcohol withdrawal", "Hyperventilation", "Aspirin poisoning"]
+  chronic_causes: ["Antacid overuse (aluminum, magnesium, calcium)", "Celiac disease", "Crohn's disease", "Vitamin D deficiency", "Hyperparathyroidism"]
+  symptoms: ["Muscle weakness", "Numbness and tingling", "Rickets (children)", "Osteomalacia (adults)"]
+supplements:
+  forms_otc: ["Sodium phosphate", "Potassium phosphate", "Multivitamin/mineral supplements"]
+  forms_prescription: ["Potassium phosphate powder", "Intravenous sodium/potassium phosphate"]
+  effective_for: ["Correcting low phosphate levels", "Treating high calcium levels (hypercalcemia)"]
+  safety_ul: "3000-4000 mg/day (adults)"
+  side_effects: ["Nausea", "Diarrhea", "Bone/joint pain", "Muscle twitching/tetany", "Convulsions", "Irregular heartbeat"]
+  interactions: ["Reduces absorption of iron, calcium, and magnesium", "Absorption reduced by aluminum/magnesium antacids and iron supplements"]
+notes:
+  ckd_management: "Chronic Kidney Disease patients may need to limit intake to 800-1000 mg/day. Phosphate binders (calcium acetate, sevelamer, etc.) are used to prevent hyperphosphatemia."
+  vegan_info: "Most phosphates are mineral-derived and vegan, except E542 (edible bone phosphate)."

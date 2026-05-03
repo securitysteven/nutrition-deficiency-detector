@@ -1,0 +1,49 @@
+name: "Selenium"
+synonyms: ["Se"]
+type: "Mineral"
+biomarker: "Selenium (Serum)"
+units:
+  primary: "mcg/L"
+  secondary: "mcg/dL"
+functions:
+  - "Antioxidant activity (part of selenoproteins)"
+  - "Protects cells against free radicals"
+  - "Conversion of inactive thyroid hormone (T4) into active form (T3)"
+rda:
+  infants_0_6m: "15 mcg (AI)"
+  infants_7_12m: "20 mcg (AI)"
+  adults: "55 mcg"
+food_sources:
+  high_plant: ["Brazil nuts (extremely high)", "Mixed nuts", "Couscous", "Whole wheat spaghetti", "Bagels", "Whole wheat bread", "Sunflower seed kernels", "Barley", "Cornmeal", "Oatmeal", "Rice (white/brown)", "Black walnuts"]
+  high_animal: ["Organ meats (kidney, liver)", "Tuna (yellowfin)", "Mollusks", "Fish and seafood", "Beef", "Lamb", "Pork", "Turkey (light meat)", "Chicken breast", "Eggs"]
+  notes: "Selenium content in plant foods depends heavily on soil concentration. In foods, it exists as selenomethionine."
+thresholds:
+  deficient:
+    value: 70
+    unit: "mcg/L"
+  normal:
+    range: [70, 150]
+    unit: "mcg/L"
+  toxic:
+    value: 1000
+    unit: "mcg/L"
+    note: "Selenosis can occur at blood levels > 100 mcg/dL (1000 mcg/L)."
+recommendations:
+  deficient: "Selenium deficiency. May cause heart disorders (Keshan disease), arthritis (Kashin-Beck disease), or mental retardation. Increased susceptibility to infections."
+  normal: "Selenium levels are normal."
+  high: "Risk of Selenosis. Symptoms include garlic breath, hair loss, brittle nails, and nerve damage. Stop supplements immediately."
+deficiency:
+  causes: ["Low soil selenium (China, East Russia)", "SIBO", "Crohn's disease", "Short Bowel Syndrome (SBS)", "Gastric bypass", "Acute severe illness"]
+  symptoms: ["Keshan disease (heart disorder)", "Kashin-Beck disease (arthritis)", "Myxedemic endemic cretinism (mental retardation)", "Hypothyroidism", "Susceptibility to infections"]
+  diagnostic_notes: "Toenail selenium reflects status over the previous year."
+supplements:
+  forms_otc: ["Sodium selenite (inorganic)", "Sodium selenate (inorganic)", "Selenomethionine (organic, better absorbed)", "Selenium-enriched yeast"]
+  effective_for: ["Prevention and treatment of selenium deficiency", "Autoimmune thyroiditis (Hashimoto's)"]
+  safety_ul: "400 mcg/day (adults), 90 mcg/day (small children)"
+  toxicity:
+    acute: ["Nausea", "Vomiting", "Diarrhea", "Metallic taste", "Garlic odor", "Facial flushing", "Tremor"]
+    chronic: ["Selenosis", "White blotchy nails", "Hair loss", "Garlic breath", "Fatigue", "Tingling (nerve damage)"]
+  interactions: ["Valproic acid lowers selenium levels", "Zinc supplements may decrease absorption", "Increases bleeding risk with blood thinners (aspirin, warfarin)", "Increases effect of barbiturates"]
+notes:
+  warnings: ["Stop supplements 2 weeks before surgery due to bleeding risk", "High intake might increase risk of Diabetes Type 2 and certain cancers", "Reduces sperm motility", "May worsen hypothyroidism if taken without iodine"]
+  breast_milk: "Contains ~18 mcg/L."

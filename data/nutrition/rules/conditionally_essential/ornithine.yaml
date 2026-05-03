@@ -1,0 +1,9 @@
+name: "Ornithine"
+biomarker: "Ornithine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 25
+  normal: [25, 150]
+recommendations:
+  low: "Ornithine is involved in the urea cycle. Low levels may indicate a need for increased protein or specific amino acid support."
+  normal: "Ornithine levels are normal."

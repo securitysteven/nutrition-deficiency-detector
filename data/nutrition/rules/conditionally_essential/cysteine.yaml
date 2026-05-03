@@ -1,0 +1,9 @@
+name: "Cysteine"
+biomarker: "Cystine (Plasma)"
+unit: "mcmol/L"
+thresholds:
+  low: 10
+  normal: [10, 80]
+recommendations:
+  low: "Increase intake of poultry, yogurt, and eggs. Cysteine is vital for glutathione production."
+  normal: "Cysteine levels are normal."

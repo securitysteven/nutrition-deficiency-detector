@@ -1,0 +1,40 @@
+name: "Linoleic Acid"
+abbreviation: "LA"
+type: "Essential Omega-6 Fatty Acid"
+biomarker: "Linoleic acid (Plasma)"
+unit: "% of total fatty acids"
+functions:
+  - "Essential polyunsaturated omega-6 fatty acid"
+  - "When used instead of saturated fats, helps reduce total and LDL cholesterol"
+  - "May improve insulin sensitivity"
+food_sources:
+  high:
+    oils:
+      - "Safflower oil (10g per tbsp)"
+      - "Sunflower oil (9g per tbsp)"
+      - "Corn oil (7g per tbsp)"
+      - "Sesame oil (5g per tbsp)"
+    seeds_nuts:
+      - "Sunflower seeds, oil roasted (10g per oz)"
+      - "Pine nuts (9g per oz)"
+      - "Brazil nuts (7g per oz)"
+      - "Pumpkin seeds (6g per oz)"
+      - "Pecans, oil roasted (6g per oz)"
+thresholds:
+  low:
+    value: 15
+    unit: "% of total fatty acids"
+  normal:
+    range: [15, 30]
+    unit: "% of total fatty acids"
+recommendations:
+  low: "Linoleic acid levels are low. Increase intake of omega-6 rich sources such as safflower oil, sunflower seeds, and pine nuts. Adequate LA intake is important for cholesterol management and insulin sensitivity."
+  normal: "Linoleic acid levels are normal."
+health_benefits:
+  cardiovascular:
+    effectiveness: "Mildly effective"
+    notes: "When used instead of saturated fats, may reduce total and LDL cholesterol and heart disease risk. However, can also decrease HDL levels."
+    insufficient_evidence: ["Heart-protective effect of corn oil"]
+  diabetes:
+    evidence: "Some evidence"
+    notes: "High intake may improve insulin sensitivity."

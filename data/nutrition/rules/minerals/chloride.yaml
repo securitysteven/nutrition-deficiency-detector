@@ -1,0 +1,39 @@
+name: "Chloride"
+type: "Essential Mineral"
+symbol: "Cl-"
+biomarker: "Chloride (Serum)"
+units:
+  primary: "mEq/L"
+  secondary: "mmol/L"
+functions:
+  - "Fluid balance (inside and outside of cells)"
+  - "Maintenance of blood volume, pressure, and pH"
+  - "Production of hydrochloric acid (HCl) in the stomach"
+food_sources:
+  primary: ["Table salt (Sodium Chloride, NaCl)", "Salt substitute (Potassium Chloride, KCl)"]
+  notes: "Excessive chloride is usually excreted via kidneys in urine, typically along with sodium."
+thresholds:
+  deficient:
+    value: 96
+    unit: "mEq/L"
+  normal:
+    range: [96, 106]
+    unit: "mEq/L"
+  high:
+    value: 106
+    unit: "mEq/L"
+recommendations:
+  deficient: "Low chloride (Hypochloremia) detected. May be associated with Hypochloremic Alkalosis (high blood pH). Consult a physician to evaluate potential causes like vomiting, diuretics, or kidney issues."
+  normal: "Chloride levels are normal (96-106 mEq/L)."
+  high: "High chloride (Hyperchloremia) detected. May be associated with Hyperchloremic Acidosis (low blood pH). Consult a physician to evaluate potential kidney disorders or excessive intake."
+deficiency:
+  condition: "Hypochloremic Alkalosis"
+  causes: ["Recurrent vomiting", "Diarrhea", "Suction of stomach contents", "Excessive sweating", "Cystic fibrosis", "Genetic kidney disorders", "Overuse of diuretics or laxatives", "Blood transfusion", "Bicarbonate infusion", "Hyperparathyroidism", "Vitamin D toxicity"]
+  symptoms: ["Fatigue", "Loss of appetite", "Failure to thrive (in children)"]
+toxicity:
+  condition: "Hyperchloremic Acidosis"
+  causes: ["Severe diarrhea", "Bowel, biliary or pancreatic disorders", "Drug overdose (cholestyramine, calcium chloride, magnesium sulfate)", "Kidney disorders", "Overdose of NaCl infusions"]
+  symptoms: ["Difficulty breathing during exertion", "Osteoporosis (in chronic cases)", "Temporary body swelling", "Nausea", "Vomiting", "Diarrhea"]
+  notes: "Intake of >15g of salt/day may cause temporary symptoms but overt toxicity is rare in healthy individuals with regular diets (0.5g - 15g salt/day)."
+notes:
+  diagnostic_context: "Levels should be checked alongside sodium, bicarbonate, and potassium as part of an electrolyte/metabolic panel."
