@@ -15,11 +15,24 @@ food_sources:
     plant: ["Legumes"]
   low: ["Wheat", "Fruits", "Vegetables"]
 thresholds:
-  low: 60
-  normal: [60, 120]
+  deficient:
+    value: 60
+    unit: "mcmol/L"
+  normal:
+    range: [60, 120]
+    unit: "mcmol/L"
 recommendations:
-  low: "Increase intake of histidine-rich foods like pork, beef, chicken, turkey, fish, cheese, and legumes."
+  deficient: "Histidine levels are low. Increase intake of histidine-rich foods like pork, beef, chicken, turkey, fish, cheese, and legumes. Supplements may be considered under medical supervision."
   normal: "Histidine levels are normal."
+effective_for:
+  possibly_ineffective:
+    - "Relieving pain in rheumatoid arthritis"
+    - "Improving anemia associated with kidney disease or hemodialysis"
+  insufficient_evidence:
+    - "Anemia due to folate deficiency"
+    - "Allergies"
+    - "Ulcers"
+    - "Increasing muscle power or athletic performance"
 supplements:
   info: "Oral L-histidine supplements are available over-the-counter. Also used as a chelator in zinc and copper supplements."
   safety: "Possibly safe for most people in recommended doses. Doses up to 4g/day have no known side effects."
