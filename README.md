@@ -54,6 +54,12 @@ Our detection rules are organized based on the five groups of essential nutrient
 4.  **Amino Acids** – Essential amino acids derived from proteins.
 5.  **Fatty Acids** – Essential fatty acids derived from fats.
 
+### Conditionally Essential Nutrients
+These can be produced by the body but may be needed from food during stress, illness, or specific life stages.
+- **Vitamin D** (moved from essential vitamins as it can be synthesized via sun exposure).
+- **Amino Acids**: Arginine, Cysteine, Glutamine, Glycine, Ornithine, Proline, Serine, Taurine, and Tyrosine.
+- **Others**: Lutein, Zeaxanthin, and Betaine.
+
 *Note on Carbohydrates:* While often categorized as key nutrients, carbohydrates are **not** essential. The body can synthesize necessary glucose from proteins and fats. However, they remain a healthy nutrient choice for many.
 
 ## Features
