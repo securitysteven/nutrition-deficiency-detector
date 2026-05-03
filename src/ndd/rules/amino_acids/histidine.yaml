@@ -1,9 +1,30 @@
 name: "Histidine"
+abbreviation: "His"
+type: "Essential Amino Acid"
 biomarker: "Histidine (Plasma)"
 unit: "mcmol/L"
+functions:
+  - "Building block of proteins"
+  - "Precursor of the neurotransmitter histamine"
+  - "Precursor of the dipeptide carnosine (together with beta-alanine)"
+  - "Glucogenic amino acid (can be converted into glucose)"
+  - "Basic (pH > 7) amino acid"
+food_sources:
+  high:
+    animal: ["Pork", "Beef", "Chicken", "Turkey", "Fish", "Cheese"]
+    plant: ["Legumes"]
+  low: ["Wheat", "Fruits", "Vegetables"]
 thresholds:
   low: 60
   normal: [60, 120]
 recommendations:
-  low: "Increase intake of meat, fish, and whole grains."
+  low: "Increase intake of histidine-rich foods like pork, beef, chicken, turkey, fish, cheese, and legumes."
   normal: "Histidine levels are normal."
+supplements:
+  info: "Oral L-histidine supplements are available over-the-counter. Also used as a chelator in zinc and copper supplements."
+  safety: "Possibly safe for most people in recommended doses. Doses up to 4g/day have no known side effects."
+  warnings:
+    - "Avoid during pregnancy and breastfeeding due to insufficient safety data."
+    - "Avoid if folic acid deficient; may cause accumulation of formiminoglutamic acid."
+disorders:
+  histidinemia: "Rare inherited disorder with increased blood/urine histidine. Usually asymptomatic and requires no therapy."
