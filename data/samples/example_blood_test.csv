@@ -1,0 +1,16 @@
+test_name,value,unit
+Glucose,112,mg/dL
+HbA1c,5.9,%
+Insulin,28,µU/mL
+Cholesterol,165,mg/dL
+LDL,120,mg/dL
+HDL,38,mg/dL
+Triglycerides,180,mg/dL
+Hemoglobin,11.5,g/dL
+MCV,78,fL
+MCH,25,pg
+BMI,22.4,kg/m²
+CRP,4.2,mg/L
+Vitamin D,15,ng/mL
+Iron,45,mcg/dL
+Ferritin,10,ng/mL
