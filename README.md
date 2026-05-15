@@ -82,7 +82,7 @@ cd nutri-deficiency-detector
 pip install -r requirements.txt
 
 # Run on a sample CSV (columns: test\_name, value, unit)
-python -m ndd detect data/samples/example\_blood\_test.csv
+python main.py
 ```
 
 ---
@@ -91,3 +91,37 @@ python -m ndd detect data/samples/example\_blood\_test.csv
 
 - [Nutrients Review: Essential Nutrients](https://www.nutrientsreview.com/glossary/essential-nutrients)
 - [Dietary Reference Intakes: The Essential Guide to Nutrient Requirements](https://www.ncbi.nlm.nih.gov/books/NBK56068/)
+
+---
+
+## Roadmap & TODOs
+
+Below is the planned evolution of the Nutri-Deficiency-Detector, organized by logical progression from infrastructure to user-facing services.
+
+### Phase 1: Data & Privacy Foundation
+- [ ] **Local PII Management & Reporting**
+    - *Guidance:* Implement local encryption for Patient Identifiable Information. Ensure the "Export to PDF/Print" feature is human-readable for clinical sharing while keeping data ownership with the user.
+- [ ] **Historical Caching & Semantic Memory**
+    - *Guidance:* Use a local database (e.g., SQLite) to track results over time. Implement basic trend analysis to identify long-term nutritional shifts rather than just single-point snapshots.
+- [ ] **Comprehensive Documentation Route**
+    - *Guidance:* Build a `/docs` site (using MKDocs or Sphinx) covering the philosophy of open-source health tools, privacy-first design, and detailed biomarker science.
+
+### Phase 2: Food Intelligence Integration
+- [ ] **OpenFoodFacts Integration**
+    - *Guidance:* Connect to the [OpenFoodFacts API](https://world.openfoodfacts.org/data) to match detected deficiencies with specific food products. Contribute nutritional data back to the community where gaps exist.
+- [ ] **Supermarket Scraper & Pricing Analysis**
+    - *Guidance:* Develop or integrate scrapers for major local supermarkets to calculate "Nutrient Density vs. Cost." This helps users find the most affordable ways to fix specific deficiencies.
+
+### Phase 3: Personalized Recommendations
+- [ ] **User Preference & Taste Profile**
+    - *Guidance:* Add a configuration layer for dietary preferences (Vegan, Keto, Allergies, Tastes). This acts as a filter for all subsequent meal and restaurant suggestions.
+- [ ] **Nutrient-Driven Cookbooks & Meal Planning**
+    - *Guidance:* Integrate with existing recipe frameworks to generate weekly meal plans that specifically target the user's flagged biomarkers.
+- [ ] **Open Maps & Local Sourcing**
+    - *Guidance:* Use OpenStreetMap or similar services to locate the nearest physical sources of high-value foods (e.g., local markets, specialized grocers).
+
+### Phase 4: Social & Professional Ecosystem
+- [ ] **Health & Social Integration (Date Night)**
+    - *Guidance:* Create a feature to find local healthy restaurants with high-nutritional-value menus. Useful for social planning that aligns with health goals.
+- [ ] **Nutritionist Matchmaking**
+    - *Guidance:* Create a directory of affordable, local nutritionists who are open to reviewing NDD-generated reports for professional consultation.
