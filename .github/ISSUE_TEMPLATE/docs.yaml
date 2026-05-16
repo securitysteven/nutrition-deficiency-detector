@@ -1,8 +1,9 @@
 name: "Docs"
-about: "Documentation, guides, or docs-site changes"
+description: "Documentation, guides, or docs-site changes"
 title: "[DOCS] "
 labels: "docs"
-assignees: ""
+assignees:
+  - securitysteven
 body:
   - type: markdown
     attributes:
