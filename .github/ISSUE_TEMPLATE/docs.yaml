@@ -2,6 +2,7 @@ name: "Docs"
 description: "Documentation, guides, or docs-site changes"
 title: "[DOCS] "
 labels: "documentation"
+projects: nutrition-deficiency-detector
 assignees:
   - securitysteven
 body:
