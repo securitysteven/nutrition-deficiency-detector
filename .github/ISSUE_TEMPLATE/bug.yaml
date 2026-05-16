@@ -1,5 +1,5 @@
 name: "Bug"
-about: "Report a bug"
+description: "Report a bug"
 title: "[BUG] "
 labels: "bug"
 assignees:
