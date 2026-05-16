@@ -1,8 +1,9 @@
 name: "Feature"
-about: "New feature, enhancement, or integration"
+description: "New feature, enhancement, or integration"
 title: "[FEATURE] "
-labels: "feature"
-assignees: ""
+labels: "enhancement"
+assignees:
+  - securitysteven
 body:
   - type: markdown
     attributes:
