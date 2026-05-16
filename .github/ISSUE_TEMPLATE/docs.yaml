@@ -1,7 +1,7 @@
 name: "Docs"
 description: "Documentation, guides, or docs-site changes"
 title: "[DOCS] "
-labels: "docs"
+labels: "documentation"
 assignees:
   - securitysteven
 body:
