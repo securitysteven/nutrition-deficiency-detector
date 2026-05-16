@@ -1,0 +1,51 @@
+name: "Docs"
+about: "Documentation, guides, or docs-site changes"
+title: "[DOCS] "
+labels: "docs"
+assignees: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Documentation change
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: "One-line description of the doc change or new page"
+      placeholder: "e.g., Add privacy-first design guide"
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Target location
+      options:
+        - /docs page
+        - README
+        - CONTRIBUTING.md
+        - Other
+  - type: textarea
+    id: outline
+    attributes:
+      label: Content / Outline
+      description: "Short outline or copy to add"
+      placeholder: |
+        - Section 1: ...
+        - Section 2: ...
+  - type: checkboxes
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      options:
+        - label: "Draft written"
+        - label: "Reviewed by at least one maintainer"
+        - label: "Deployed to /docs site (if applicable)"
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size estimate
+      options:
+        - size/S
+        - size/M
+        - size/L
