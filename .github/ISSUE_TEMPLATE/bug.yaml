@@ -2,7 +2,8 @@ name: "Bug"
 about: "Report a bug"
 title: "[BUG] "
 labels: "bug"
-assignees: ""
+assignees:
+  - securitysteven
 body:
   - type: markdown
     attributes:
